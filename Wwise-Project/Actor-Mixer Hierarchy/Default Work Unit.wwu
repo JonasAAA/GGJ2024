@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{320E09AB-DEED-473A-A300-7E95830255A7}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{320E09AB-DEED-473A-A300-7E95830255A7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Demo_Sfx" ID="{DA82FC84-2A80-4196-B1DB-82F68CBC22D4}" ShortID="963188170">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8A270EE-EC1C-4C71-9216-E0620895F51A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{128B8CDA-3178-4289-915A-74B145A67794}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="UIClick" ID="{BC394E7E-65A4-4449-84A7-3307367815E5}">
+							<Language>SFX</Language>
+							<AudioFile>UIClick.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="780446710"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="UIClick" ID="{BC394E7E-65A4-4449-84A7-3307367815E5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

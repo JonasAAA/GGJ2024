@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Wwise-Project" GUID="{5EEE26E8-D7CB-4764-BA6B-C8975B7EC6BC}" Generator="2023.1.0.8367"/>
+	<CacheRoot>../.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Android" GUID="{BACA5308-E36B-4846-B16E-54DBB6A5AFF3}" BasePlatform="Android" BasePlatformGUID="{A2D401DE-B8B6-4FEB-8142-137C34D507CA}" Path="../../GeneratedSoundBanks/Android"/>
+		<Platform Name="iOS" GUID="{178A4B9E-B4EE-4A3C-AB48-B96E590E72D9}" BasePlatform="iOS" BasePlatformGUID="{ECE03DB4-F948-462D-B2BB-A9173012B1F8}" Path="../../GeneratedSoundBanks/iOS"/>
+		<Platform Name="Linux" GUID="{FEA4A00E-C85F-4F3C-9671-2D73FFD308E1}" BasePlatform="Linux" BasePlatformGUID="{BD0BDF13-3125-454F-8BFD-319537169F81}" Path="../../GeneratedSoundBanks/Linux"/>
+		<Platform Name="Mac" GUID="{3CF62D46-1606-4EFF-8805-C3EA67E83EFC}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../GeneratedSoundBanks/Mac"/>
+		<Platform Name="Web" GUID="{DDEE7807-C589-4CF5-9073-A0FC55F8A5B1}" BasePlatform="Web" BasePlatformGUID="{639AD233-23F2-4C0F-9127-79F44C15E1DA}" Path="../../GeneratedSoundBanks/Web"/>
+		<Platform Name="Windows" GUID="{9FB24CCA-2589-44B8-8226-62BEAD257959}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{B498CDE2-F3EE-4799-A381-D723906A8496}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{105F20C4-373D-8DBF-DF3C-C9254A328F09}</FileHash>
+</ProjectInfo>
