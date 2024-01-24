@@ -11,3 +11,4 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
 		Wwise.post_event_id(AK.EVENTS.DEMO_EVENT, self)
+
