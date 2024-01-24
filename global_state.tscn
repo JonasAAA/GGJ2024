@@ -4,3 +4,10 @@
 
 [node name="global_state" type="Node"]
 script = ExtResource("1_mo5ul")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 94.0
+offset_top = 64.0
+offset_right = 225.0
+offset_bottom = 139.0
+text = "Button"
