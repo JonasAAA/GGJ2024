@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqqv4ixeocdr1"]
+
+[ext_resource type="Script" path="res://clown.gd" id="1_mfdmk"]
+[ext_resource type="Texture2D" uid="uid://csid5451i07fq" path="res://images/clown.png" id="2_cx1jt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ctuyi"]
+radius = 24.0
+height = 468.0
+
+[node name="clown" type="Area2D"]
+script = ExtResource("1_mfdmk")
+
+[node name="CollisionShape1" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CapsuleShape2D_ctuyi")
+
+[node name="CollisionShape2" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(-20, -24)
+polygon = PackedVector2Array(93, -41, 232, -33, 232, 138, -103, 246, -98, 91, -4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_cx1jt")

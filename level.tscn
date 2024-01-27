@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmeu7jpchxt8i"]
+
+[ext_resource type="Script" path="res://level.gd" id="1_ms3lu"]
+[ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://level_ui.tscn" id="2_la7km"]
+
+[sub_resource type="Curve2D" id="Curve2D_2y1pd"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 909, 1082, 0, 0, 0, 0, 909, 985, 0, 0, 0, 0, 143, 980, 0, 0, 0, 0, 137, 131, 0, 0, 0, 0, 1842, 151, 0, 0, 0, 0, 1831, 949, 0, 0, 0, 0, 1031, 977, 0, 0, 0, 0, 1033, 1079)
+}
+point_count = 8
+
+[sub_resource type="Curve2D" id="Curve2D_65ogh"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 532, 220, 0, 0, 0, 0, 297, 465, 0, 0, 0, 0, 274, 148, 0, 0, 0, 0, 532, 220)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_ok15b"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 944, 444, 0, 0, 0, 0, 282, 586, 0, 0, 0, 0, 621, 247, 0, 0, 0, 0, 1507, 183, 0, 0, 0, 0, 877, 981)
+}
+point_count = 5
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_ms3lu")
+
+[node name="Path1" type="Path2D" parent="."]
+curve = SubResource("Curve2D_2y1pd")
+
+[node name="Path2" type="Path2D" parent="."]
+curve = SubResource("Curve2D_65ogh")
+
+[node name="Path3" type="Path2D" parent="."]
+curve = SubResource("Curve2D_ok15b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LevelUI" parent="CanvasLayer" instance=ExtResource("2_la7km")]
