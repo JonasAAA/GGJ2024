@@ -1,14 +1,11 @@
 class_name Person extends Node2D
 
 @onready
-var path = $Path
+var path: Path2D = $Path
 @onready
-var path_folow = $Path/PathFollow
+var path_folow: PathFollow2D = $Path/PathFollow
 
 var progress: float = 0
-
-func _ready() -> void:
-	pass
 
 func initialize(curve: Curve2D) -> void:
 	path.curve = curve

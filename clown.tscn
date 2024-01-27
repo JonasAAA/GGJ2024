@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqqv4ixeocdr1"]
+[gd_scene load_steps=3 format=3 uid="uid://cqqv4ixeocdr1"]
 
 [ext_resource type="Script" path="res://clown.gd" id="1_mfdmk"]
 
-[node name="clown" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ctuyi"]
+radius = 24.0
+height = 468.0
+
+[node name="clown" type="Area2D"]
 script = ExtResource("1_mfdmk")
+
+[node name="CollisionShape1" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CapsuleShape2D_ctuyi")
+
+[node name="CollisionShape2" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(-20, -24)
+polygon = PackedVector2Array(10, 0, 37, -1, 69, 49, 12, 49, -28, 36, -4, 4)
