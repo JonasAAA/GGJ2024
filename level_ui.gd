@@ -1,9 +1,9 @@
 class_name LevelUI extends Control
 
 @onready
-var score_label = $VertContainer/ScoreLabel
+var score_label: Label = $VertContainer/ScoreLabel
 @onready
-var missed_label = $VertContainer/MissedLabel
+var missed_label: Label = $VertContainer/MissedLabel
 var score: int = 0 : set = set_score
 var missed: int = 0 : set = set_missed
 
