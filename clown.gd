@@ -16,5 +16,7 @@ func set_clown_shape_disabled(index: int, disabled: bool) -> void:
 	var shape: Node2D = clown_shapes[index]
 	if shape is CollisionShape2D:
 		(shape as CollisionShape2D).disabled = disabled
+		(shape as CollisionShape2D).visible = not disabled
 	if shape is CollisionPolygon2D:
 		(shape as CollisionPolygon2D).disabled = disabled
+		(shape as CollisionPolygon2D).visible = not disabled

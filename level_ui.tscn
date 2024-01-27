@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://3hbhw6557itd"]
+
+[ext_resource type="Script" path="res://level_ui.gd" id="1_88yan"]
+[ext_resource type="LabelSettings" uid="uid://b8fv2opbu473k" path="res://label_settings.tres" id="2_5gndu"]
+
+[node name="LevelUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_88yan")
+
+[node name="VertContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.0
+offset_right = 67.0
+offset_bottom = 96.0
+grow_horizontal = 2
+
+[node name="ScoreLabel" type="Label" parent="VertContainer"]
+layout_mode = 2
+text = "Score: 0"
+label_settings = ExtResource("2_5gndu")
+
+[node name="MissedLabel" type="Label" parent="VertContainer"]
+layout_mode = 2
+text = "Missed: 0"
+label_settings = ExtResource("2_5gndu")
