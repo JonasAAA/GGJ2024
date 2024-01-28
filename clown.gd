@@ -1,7 +1,7 @@
 class_name Clown extends Area2D
 
 var collision_shape: Node2D
-@onready var clown_shapes: Array[Node2D] = [$CollisionShape1, $CollisionShape2]
+@onready var clown_shapes: Array[Node2D] = [$CollisionCircle, $CollisionPill]
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:

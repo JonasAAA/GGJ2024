@@ -55,6 +55,7 @@ visible = false
 curve = SubResource("Curve2D_65ogh")
 
 [node name="Path3" type="Path2D" parent="."]
+visible = false
 curve = SubResource("Curve2D_ok15b")
 
 [node name="UICanvas" type="CanvasLayer" parent="."]

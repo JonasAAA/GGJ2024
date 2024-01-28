@@ -3,7 +3,7 @@ extends Node2D
 const max_clowns: int = 2
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
-@onready var paths: Array[Path2D] = [$Path1, $Path2, $Path3]
+@onready var paths: Array[Path2D] = [$Path0, $Path1, $Path2, $Path3]
 @onready var level_ui: LevelUI = $UICanvas/LevelUI
 var people: Array[Person] = []
 var clowns: Array[Clown] = []
