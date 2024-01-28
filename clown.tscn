@@ -151,6 +151,7 @@ visible = false
 shape = SubResource("CircleShape2D_lhtdh")
 
 [node name="coll_shape_1_pill" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CapsuleShape2D_qilav")
 
 [node name="transform_scale2" type="Node2D" parent="."]
