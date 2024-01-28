@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="732818365" Type="User" Language="SFX" Hash="{1B581453-57D6-098C-D439-C51B346304E5}">
+		<SoundBank Id="732818365" Type="User" Language="SFX" Hash="{4EEE9866-E594-F5F7-741F-60881E5E63FA}">
 			<ShortName>ClownSound</ShortName>
 			<Path>ClownSound.bnk</Path>
 			<Media>
@@ -591,5 +591,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7118F7EE-A46B-165F-9EF1-6E42BAB30B0B}</FileHash>
+	<FileHash>{535B7B8B-E118-10A7-35E8-EFFC26BDED8E}</FileHash>
 </SoundBanksInfo>
