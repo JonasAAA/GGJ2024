@@ -2,11 +2,11 @@
 <PlatformInfo>
 	<Platform Name="Windows" BasePlatform="Windows" Generator="2023.1.0.8367"/>
 	<RootPaths>
-		<ProjectRoot>../../Wwise-Project</ProjectRoot>
-		<SourceFilesRoot>../../Wwise-Project/.cache/Windows</SourceFilesRoot>
+		<ProjectRoot>../../../../WwiseProjects/GGJ2024</ProjectRoot>
+		<SourceFilesRoot>../../../../WwiseProjects/GGJ2024/.cache/Windows</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>../../Wwise-Project/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>../../../../WwiseProjects/GGJ2024/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DefaultAlign>16</DefaultAlign>
 	<Settings>
@@ -28,5 +28,5 @@
 		<PrintObjectGuid>false</PrintObjectGuid>
 		<PrintObjectPath>false</PrintObjectPath>
 	</Settings>
-	<FileHash>{DE92D73C-49F5-7BC0-095B-007F373FB4A0}</FileHash>
+	<FileHash>{8F5A99F1-5415-6F50-D174-08084A83E4E0}</FileHash>
 </PlatformInfo>

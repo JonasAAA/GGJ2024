@@ -2,11 +2,11 @@
 <PlatformInfo>
 	<Platform Name="Linux" BasePlatform="Linux" Generator="2023.1.0.8367"/>
 	<RootPaths>
-		<ProjectRoot>../../Wwise-Project</ProjectRoot>
-		<SourceFilesRoot>../../Wwise-Project/.cache/Linux</SourceFilesRoot>
+		<ProjectRoot>../../../../WwiseProjects/GGJ2024</ProjectRoot>
+		<SourceFilesRoot>../../../../WwiseProjects/GGJ2024/.cache/Linux</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>../../Wwise-Project/GeneratedSoundBanks/Linux</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>../../../../WwiseProjects/GGJ2024/GeneratedSoundBanks/Linux</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DefaultAlign>16</DefaultAlign>
 	<Settings>
@@ -28,5 +28,5 @@
 		<PrintObjectGuid>false</PrintObjectGuid>
 		<PrintObjectPath>false</PrintObjectPath>
 	</Settings>
-	<FileHash>{118FE25A-BF00-128F-D327-FAA2646DCB52}</FileHash>
+	<FileHash>{3C0B0D66-0A37-1910-9A70-9E9EC5893898}</FileHash>
 </PlatformInfo>
