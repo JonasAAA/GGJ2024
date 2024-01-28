@@ -4,12 +4,19 @@ const max_clowns: int = 2
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
 @onready var paths: Array[Path2D] = [$Path1, $Path2, $Path3]
-@onready var level_ui: LevelUI = $CanvasLayer/LevelUI
+@onready var level_ui: LevelUI = $UICanvas/LevelUI
 var people: Array[Person] = []
 var clowns: Array[Clown] = []
 var clown_to_place: Clown = null
 
 func _ready() -> void:
+	Wwise.load_bank("Init")
+	Wwise.load_bank("Demo_Soundbank")
+	
+	# Demo
+	Wwise.register_listener(self)
+	Wwise.register_game_obj(self, "Level")
+	
 	spawn_person()
 	set_new_clown_to_place()
 	level_ui.score = 0
@@ -27,6 +34,8 @@ func clown_exited(area: Area2D) -> void:
 	person.clown_count -= 1
 
 func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		Wwise.post_event_id(AK.EVENTS.DEMO_EVENT, self)
 	var not_done_people: Array[Person] = []
 	for person: Person in people:
 		if person.is_done():
