@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://k2g2mqng6qkl"]
+[gd_scene load_steps=13 format=3 uid="uid://k2g2mqng6qkl"]
 
 [ext_resource type="Script" path="res://person.gd" id="1_6mymm"]
 [ext_resource type="PackedScene" uid="uid://jmskjcg1w0k2" path="res://character_sprite.tscn" id="2_8o5js"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://iyb8ycnru1i6" path="res://images/visitors/visitor_1.tga" id="4_0psuh"]
 [ext_resource type="Texture2D" uid="uid://yph4y8kswchs" path="res://images/visitors/visitor_2.tga" id="5_b1jqv"]
 [ext_resource type="Texture2D" uid="uid://dx5otixfxbp36" path="res://images/visitors/visitor_3.tga" id="6_6pluq"]
+[ext_resource type="PackedScene" uid="uid://dp8xf01hgop7m" path="res://emotion_indicator.tscn" id="7_ywff2"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r2nvs"]
 radius = 4.47214
@@ -205,3 +206,7 @@ scale = Vector2(0.125, 0.125)
 [node name="sprite_visitor" parent="transform" instance=ExtResource("2_8o5js")]
 scale = Vector2(1, 1)
 texture = ExtResource("3_1y15n")
+
+[node name="emotion_indicator" parent="." instance=ExtResource("7_ywff2")]
+position = Vector2(0, -75)
+scale = Vector2(0.125, 0.125)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dp8xf01hgop7m"]
 
-[ext_resource type="Texture2D" uid="uid://hbllaclfy4wv" path="res://images/visitors/laugh.tga" id="1_tc4mk"]
+[ext_resource type="Texture2D" uid="uid://hbllaclfy4wv" path="res://images/visitors/laugh.tga" id="1_bupmu"]
 
 [sub_resource type="Animation" id="Animation_6gekt"]
 length = 0.001
@@ -48,6 +48,6 @@ libraries = {
 }
 
 [node name="sprite_laugh_meter" type="Sprite2D" parent="."]
-texture = ExtResource("1_tc4mk")
+texture = ExtResource("1_bupmu")
 hframes = 5
 frame = 3

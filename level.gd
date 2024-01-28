@@ -80,7 +80,7 @@ func set_new_clown_to_place() -> void:
 func spawn_person() -> void:
 	var person: Person = person_template.instantiate()
 	add_child(person)
-	person.initialize(rand_ind(person.sprites), paths[rand_ind(paths)].curve, 100, 1)
+	person.initialize(rand_ind(person.sprites), paths[rand_ind(paths)].curve, 100, 0)
 	people.append(person)
 	person.turn_happy.connect(person_turned_happy)
 
