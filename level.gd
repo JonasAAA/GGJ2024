@@ -11,11 +11,12 @@ var clown_to_place: Clown = null
 
 func _ready() -> void:
 	Wwise.load_bank("Init")
-	Wwise.load_bank("Demo_Soundbank")
+	Wwise.load_bank("ClownSound")
 	
-	# Demo
 	Wwise.register_listener(self)
 	Wwise.register_game_obj(self, "Level")
+	
+	Wwise.post_event_id(AK.EVENTS.MUSICGAMEPLAY, self)
 	
 	spawn_person()
 	set_new_clown_to_place()
@@ -25,6 +26,8 @@ func clown_entered(area: Area2D) -> void:
 	var person: Person = area as Person
 	if person == null:
 		return
+	Wwise.post_event_id(AK.EVENTS.CLOWNAREAENTERED, self)
+	Wwise.post_event_id(AK.EVENTS.PERSONAREAENTERED, self)
 	person.clown_count += 1
 
 func clown_exited(area: Area2D) -> void:
@@ -34,8 +37,6 @@ func clown_exited(area: Area2D) -> void:
 	person.clown_count -= 1
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		Wwise.post_event_id(AK.EVENTS.DEMO_EVENT, self)
 	var not_done_people: Array[Person] = []
 	for person: Person in people:
 		if person.is_done():
@@ -46,8 +47,12 @@ func _process(delta: float) -> void:
 		else:
 			not_done_people.append(person)
 	people = not_done_people
-
-	if randf() < 1 * delta:
+	
+	if randf() < 0.01:
+		Wwise.post_event_id(AK.EVENTS.CLOWNIDLE, self)
+	if randf() < 0.0001:
+		Wwise.post_event_id(AK.EVENTS.CLOWNTONGUEWHISTLE, self)
+	if randf() < 0.1 * delta:
 		spawn_person()
 	if clown_to_place != null:
 		clown_to_place.position = get_mouse_pos()
@@ -86,6 +91,10 @@ func spawn_person() -> void:
 
 func person_turned_happy() -> void:
 	level_ui.score += 1
+	Wwise.post_event_id(AK.EVENTS.CLOWNSUCCESS, self)
+	Wwise.post_event_id(AK.EVENTS.PERSONCONVERTED, self)
+	if randf() < 0.5:
+		Wwise.post_event_id(AK.EVENTS.MUSICFILL, self)
 
 func rand_ind(array: Array) -> int:
 	return randi_range(0, array.size() - 1)
