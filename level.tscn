@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://level.gd" id="1_ms3lu"]
 [ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://level_ui.tscn" id="2_la7km"]
-[ext_resource type="Texture2D" uid="uid://boc8ya2ggb7mh" path="res://images/arena.png" id="3_ymvrm"]
+[ext_resource type="Texture2D" path="res://images/arena.png" id="3_ymvrm"]
 
 [sub_resource type="Curve2D" id="Curve2D_2y1pd"]
 _data = {
