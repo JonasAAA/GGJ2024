@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqqv4ixeocdr1"]
+[gd_scene load_steps=8 format=3 uid="uid://cqqv4ixeocdr1"]
 
 [ext_resource type="Script" path="res://clown.gd" id="1_mfdmk"]
 [ext_resource type="Texture2D" uid="uid://bf7ujaxsd7633" path="res://images/clowns/clown_baloon.tga" id="2_3sw4y"]
@@ -6,6 +6,111 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ctuyi"]
 radius = 24.0
 height = 468.0
+
+[sub_resource type="Animation" id="Animation_fit2g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("transform_scale/Sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.921875, 1.14258)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("transform_scale/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8, -54)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("transform_scale/Sprite:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_sn1en"]
+resource_name = "idle_in_hand"
+loop_mode = 1
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("transform_scale/Sprite:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.666667, 1.08333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.929688), Vector2(1, 1.14453), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2bh7d"]
+resource_name = "working_placed"
+length = 1.00001
+loop_mode = 1
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("transform_scale/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -3.00001), Vector2(-32, -127), Vector2(0, -3.00001), Vector2(72, -127)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("transform_scale/Sprite:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.125, 0.900391), Vector2(0.921875, 1.14258), Vector2(1.125, 0.900391), Vector2(0.921875, 1.14258)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("transform_scale/Sprite:skew")
+tracks/2/interp = 4
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.10472, 0.0, 0.122173]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fh4e3"]
+_data = {
+"RESET": SubResource("Animation_fit2g"),
+"idle_in_hand": SubResource("Animation_sn1en"),
+"working_placed": SubResource("Animation_2bh7d")
+}
 
 [node name="clown" type="Area2D"]
 script = ExtResource("1_mfdmk")
@@ -15,10 +120,18 @@ visible = false
 shape = SubResource("CapsuleShape2D_ctuyi")
 
 [node name="CollisionShape2" type="CollisionPolygon2D" parent="."]
-visible = false
 position = Vector2(-20, -24)
 polygon = PackedVector2Array(93, -41, 232, -33, 232, 138, -103, 246, -98, 91, -4, 4)
 
-[node name="Sprite" type="Sprite2D" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fh4e3")
+}
+
+[node name="transform_scale" type="Node2D" parent="."]
 scale = Vector2(0.125, 0.125)
+
+[node name="Sprite" type="Sprite2D" parent="transform_scale"]
+position = Vector2(8, -54)
+scale = Vector2(0.921875, 1.14258)
 texture = ExtResource("2_3sw4y")
