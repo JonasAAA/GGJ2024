@@ -1,6 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1040102313	Demo_Event			\Default Work Unit\Demo_Event	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	780446710	Demo_Sfx	C:\Users\Jonas\Desktop\GGJ2024\GGJ2024\Wwise-Project\.cache\Windows\SFX\UIClick_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Demo_Sfx		216096
-

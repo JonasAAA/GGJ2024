@@ -1,0 +1,78 @@
+Event	ID	Name			Wwise Object Path	Notes
+	73601253	ClownBalloon			\Default Work Unit\Clown\ClownBalloon	
+	478204473	ClownBalloonAirOut			\Default Work Unit\Clown\ClownBalloonAirOut	
+	671820754	ClownTongueWhistle			\Default Work Unit\Clown\ClownTongueWhistle	
+	1068133726	ClownIdle			\Default Work Unit\Clown\ClownIdle	
+	2061662214	PersonAreaEntered			\Default Work Unit\Person\PersonAreaEntered	
+	2166999993	ClownSuccess			\Default Work Unit\Clown\ClownSuccess	
+	2345123606	ClownBalloonAirIn			\Default Work Unit\Clown\ClownBalloonAirIn	
+	3000251912	ClownAreaEntered			\Default Work Unit\Clown\ClownAreaEntered	
+	3260659876	ClownFail			\Default Work Unit\Clown\ClownFail	
+	3550401272	PersonConverted			\Default Work Unit\Person\PersonConverted	
+	4165973916	PersonIdle			\Default Work Unit\Person\PersonIdle	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	34316921	ClownBalloonAirOut2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirOut2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirOut\ClownBalloonAirOut2		2927180
+	38511902	ClownBalloon9	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon9		340980
+	43477517	PersonConverted4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonConverted4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonConverted\PersonConverted4		131344
+	51882411	ClownBalloonAirOut5	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirOut5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirOut\ClownBalloonAirOut5		567080
+	63119302	PersonIdle2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonIdle2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonIdle\PersonIdle2		43356
+	70239462	ClownIdle2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle2		78152
+	80748479	ClownAreaEntered7	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered7		278220
+	93317724	PersonAreaEntered1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonAreaEntered1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonAreaEntered\PersonAreaEntered1		88072
+	94542142	PersonConverted2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonConverted2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonConverted\PersonConverted2		388804
+	117869598	ClownIdle5	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle5		63884
+	159141816	PersonConverted5	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonConverted5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonConverted\PersonConverted5		154220
+	164934698	ClownBalloonAirIn2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirIn2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirIn\ClownBalloonAirIn2		564860
+	166835310	ClownBalloon2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon2		354068
+	170244634	PersonConverted1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonConverted1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonConverted\PersonConverted1		711064
+	178645853	ClownBalloon3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon3		275664
+	218696574	ClownBalloonAirIn3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirIn3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirIn\ClownBalloonAirIn3		287752
+	238328911	ClownAreaEntered1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered1		122036
+	258594235	ClownBalloonAirIn1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirIn1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirIn\ClownBalloonAirIn1		458252
+	298849325	ClownIdle7	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle7		140824
+	307229985	PersonAreaEntered4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonAreaEntered4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonAreaEntered\PersonAreaEntered4		298472
+	318383623	ClownBalloon11	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon11_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon11		825588
+	358093219	ClownAreaEntered6	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered6		249272
+	373313274	ClownAreaEntered4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered4		270072
+	392757770	ClownBalloon4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon4		309872
+	406411718	PersonConverted6	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonConverted6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonConverted\PersonConverted6		321712
+	413672532	ClownIdle6	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle6		107416
+	439097630	ClownTongueWhistle2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle2		333292
+	453450010	PersonAreaEntered2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonAreaEntered2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonAreaEntered\PersonAreaEntered2		106764
+	465265953	ClownTongueWhistle4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle4		461584
+	509804686	ClownAreaEntered10	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered10		219944
+	514661622	ClownTongueWhistle3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle3		165180
+	517510924	ClownTongueWhistle6	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle6		516416
+	519532111	PersonConverted3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonConverted3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonConverted\PersonConverted3		118384
+	519929995	ClownBalloonAirOut3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirOut3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirOut\ClownBalloonAirOut3		1926660
+	553313871	ClownIdle1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle1		367164
+	555415547	ClownBalloon8	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon8_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon8		560428
+	568652679	ClownFail	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownFail_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownFail		131464
+	571731207	ClownAreaEntered5	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered5		212028
+	609922028	ClownIdle3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle3		74220
+	620207500	ClownBalloon10	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon10		446484
+	690472483	ClownTongueWhistle1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle1		310240
+	697536373	PersonAreaEntered3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonAreaEntered3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonAreaEntered\PersonAreaEntered3		107420
+	714064137	ClownIdle8	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle8_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle8		124420
+	743252090	ClownBalloon6	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon6		118452
+	759737665	ClownBalloonAirIn4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirIn4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirIn\ClownBalloonAirIn4		456372
+	763487299	ClownAreaEntered9	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered9		224824
+	767849442	ClownIdle9	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle9_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle9		112372
+	790442989	PersonIdle3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonIdle3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonIdle\PersonIdle3		52296
+	837196206	ClownSuccess1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownSuccess1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownSuccess\ClownSuccess1		492400
+	840022186	ClownBalloon7	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon7		440224
+	844411174	ClownSuccess2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownSuccess2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownSuccess\ClownSuccess2		509488
+	856848511	ClownBalloon5	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon5		180440
+	875086027	ClownTongueWhistle7	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle7_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle7		543536
+	894189346	ClownAreaEntered2	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered2_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered2		62916
+	903395655	PersonIdle1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\PersonIdle1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\PersonIdle\PersonIdle1		54612
+	931009196	ClownBalloon1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloon1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloon\ClownBalloon1		590668
+	952670124	ClownAreaEntered8	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered8_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered8		241640
+	953818679	ClownBalloonAirOut1	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirOut1_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirOut\ClownBalloonAirOut1		2625520
+	965818215	ClownBalloonAirOut6	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirOut6_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirOut\ClownBalloonAirOut6		1650112
+	983675350	ClownIdle4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownIdle4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownIdle\ClownIdle4		71332
+	1016902541	ClownTongueWhistle5	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownTongueWhistle5_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownTongueWhistle\ClownTongueWhistle5		708308
+	1025004328	ClownAreaEntered3	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownAreaEntered3_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownAreaEntered\ClownAreaEntered3		59988
+	1027938166	ClownBalloonAirOut4	C:\Users\vaida\Documents\WwiseProjects\GGJ2024\.cache\Linux\SFX\ClownBalloonAirOut4_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\ClownBalloonAirOut\ClownBalloonAirOut4		306516
+
