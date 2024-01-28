@@ -2,6 +2,8 @@ class_name AK
 
 class EVENTS:
 
+	const MUSICGAMEPLAY = 825489254
+	const MUSICFILL = 1747186245
 	const PERSONIDLE = 4165973916
 	const CLOWNAREAENTERED = 3000251912
 	const PERSONCONVERTED = 3550401272
@@ -15,6 +17,8 @@ class EVENTS:
 	const PERSONAREAENTERED = 2061662214
 
 	const _dict = {
+		"MusicGameplay": MUSICGAMEPLAY,
+		"MusicFill": MUSICFILL,
 		"PersonIdle": PERSONIDLE,
 		"ClownAreaEntered": CLOWNAREAENTERED,
 		"PersonConverted": PERSONCONVERTED,
