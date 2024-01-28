@@ -9,7 +9,7 @@ step = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/Sprite2D:frame_coords")
+tracks/0/path = NodePath("sprite_laugh_meter:frame_coords")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -24,7 +24,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/Sprite2D:frame_coords")
+tracks/0/path = NodePath("sprite_laugh_meter:frame_coords")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -47,7 +47,7 @@ libraries = {
 "": SubResource("AnimationLibrary_342f1")
 }
 
-[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer"]
+[node name="sprite_laugh_meter" type="Sprite2D" parent="."]
 texture = ExtResource("1_tc4mk")
 hframes = 5
 frame = 3
