@@ -1,8 +1,8 @@
 class_name Clown extends Area2D
 
 var collision_shape: Node2D
-@onready
-var clown_shapes: Array[Node2D] = [$CollisionShape1, $CollisionShape2]
+@onready var clown_shapes: Array[Node2D] = [$CollisionShape1, $CollisionShape2]
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 func _ready() -> void:
 	for ind: int in clown_shapes.size():
@@ -11,6 +11,10 @@ func _ready() -> void:
 func initialize(shape_index: int) -> void:
 	collision_shape = clown_shapes[shape_index]
 	set_clown_shape_disabled(shape_index, false)
+	animation_player.play("idle_in_hand")
+
+func place() -> void:
+	animation_player.play("working_placed")
 	
 func set_clown_shape_disabled(index: int, disabled: bool) -> void:
 	var shape: Node2D = clown_shapes[index]

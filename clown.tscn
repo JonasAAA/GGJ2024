@@ -120,6 +120,7 @@ visible = false
 shape = SubResource("CapsuleShape2D_ctuyi")
 
 [node name="CollisionShape2" type="CollisionPolygon2D" parent="."]
+visible = false
 position = Vector2(-20, -24)
 polygon = PackedVector2Array(93, -41, 232, -33, 232, 138, -103, 246, -98, 91, -4, 4)
 

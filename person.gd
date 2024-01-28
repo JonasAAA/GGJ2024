@@ -5,7 +5,8 @@ const happiness_per_sec: float = 0.5
 @onready var path: Path2D = $Path
 @onready var path_follow: PathFollow2D = $Path/PathFollow
 @onready var sprites: Array[Sprite2D] = [$Sprite0, $Sprite1, $Sprite2, $Sprite3]
-var sprite: Sprite2D
+@onready var sprite: Sprite2D = $transform/sprite_visitor
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
 var speed: float = 100
 var required_happiness: float = 1
 
@@ -17,10 +18,8 @@ var was_happy: bool
 signal turn_happy
 
 func initialize(spriteInd: int, curve: Curve2D, _speed: float, _required_happiness: float) -> void:
-	sprite = sprites[spriteInd]
-	sprite.visible = true
+	sprite.texture = sprites[spriteInd].texture
 	path.curve = curve
-	#sprite.texture = texture
 	speed = _speed
 	required_happiness = _required_happiness
 	clown_count = 0
@@ -28,11 +27,13 @@ func initialize(spriteInd: int, curve: Curve2D, _speed: float, _required_happine
 	clown_count = 0
 	was_happy = false
 	update_position()
+	animation_player.play("walking_normal")
 
 func _process(delta: float) -> void:
 	happiness += delta * happiness_per_sec * clown_count
 	var is_happy: bool = happiness >= required_happiness
 	if not was_happy and is_happy:
+		animation_player.play("walking_happy")
 		turn_happy.emit()
 	if is_happy:
 		sprite.modulate = Color(0, 1, 0)

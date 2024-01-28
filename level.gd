@@ -54,6 +54,7 @@ func _process(delta: float) -> void:
 		if Input.is_action_just_pressed("click"):
 			clown_to_place.area_entered.connect(clown_entered)
 			clown_to_place.area_exited.connect(clown_exited)
+			clown_to_place.place()
 			clowns.append(clown_to_place)
 			if clowns.size() > max_clowns:
 				remove_child(clowns[0])
