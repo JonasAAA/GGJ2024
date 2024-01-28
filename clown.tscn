@@ -142,6 +142,7 @@ libraries = {
 }
 
 [node name="transform_scale" type="Node2D" parent="."]
+position = Vector2(0, -52.85)
 scale = Vector2(0.125, 0.125)
 metadata/_edit_lock_ = true
 

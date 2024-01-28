@@ -8,7 +8,8 @@ const required_happiness: float = 1
 @onready var sprites: Array[Sprite2D] = [$Sprite0, $Sprite1, $Sprite2, $Sprite3]
 @onready var sprite: Sprite2D = $transform/sprite_visitor
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-@onready var emotion_indicator_player: AnimationPlayer = $emotion_indicator/AnimationPlayer
+#@onready var emotion_indicator_player: AnimationPlayer = $emotion_indicator/AnimationPlayer
+@onready var emotion_indicator_player: AnimationPlayer = $AnimationPlayerEmotionIndicator
 @onready var emotion_indicator_sprite: Sprite2D = $emotion_indicator/sprite_laugh_meter
 var speed: float
 var starting_happiness: float
