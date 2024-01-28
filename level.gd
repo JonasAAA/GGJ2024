@@ -3,10 +3,8 @@ extends Node2D
 const max_clowns: int = 2
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
-@onready
-var paths: Array[Path2D] = [$Path1, $Path2, $Path3]
-@onready
-var level_ui: LevelUI = $CanvasLayer/LevelUI
+@onready var paths: Array[Path2D] = [$Path1, $Path2, $Path3]
+@onready var level_ui: LevelUI = $CanvasLayer/LevelUI
 var people: Array[Person] = []
 var clowns: Array[Clown] = []
 var clown_to_place: Clown = null
@@ -72,7 +70,7 @@ func set_new_clown_to_place() -> void:
 func spawn_person() -> void:
 	var person: Person = person_template.instantiate()
 	add_child(person)
-	person.initialize(paths[rand_ind(paths)].curve)
+	person.initialize(rand_ind(person.sprites), paths[rand_ind(paths)].curve, 100, 1)
 	people.append(person)
 	person.turn_happy.connect(person_turned_happy)
 

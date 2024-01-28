@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf7ujaxsd7633"
-path="res://.godot/imported/clown_baloon.tga-721ff040969034aa3bff37a6056a9cf2.ctex"
+uid="uid://citi4ogrpd7ps"
+path="res://.godot/imported/clown_speaker.tga-06362b9806834c50c7a7a5c09e946ce3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/clowns/clown_baloon.tga"
-dest_files=["res://.godot/imported/clown_baloon.tga-721ff040969034aa3bff37a6056a9cf2.ctex"]
+source_file="res://images/clowns/clown_speaker.tga"
+dest_files=["res://.godot/imported/clown_speaker.tga-06362b9806834c50c7a7a5c09e946ce3.ctex"]
 
 [params]
 

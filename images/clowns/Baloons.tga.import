@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3utp5uw0wgg2"
-path="res://.godot/imported/person.png-3f6916acb4a1be062a32f139b06dd0bc.ctex"
+uid="uid://dyfnxp0tjrk63"
+path="res://.godot/imported/Baloons.tga-cc8a142dc85c127ef9e85d4d4c2cf7f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/person.png"
-dest_files=["res://.godot/imported/person.png-3f6916acb4a1be062a32f139b06dd0bc.ctex"]
+source_file="res://images/clowns/Baloons.tga"
+dest_files=["res://.godot/imported/Baloons.tga-cc8a142dc85c127ef9e85d4d4c2cf7f1.ctex"]
 
 [params]
 

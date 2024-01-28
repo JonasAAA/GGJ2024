@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://jmskjcg1w0k2"]
+
+[node name="CharacterSprite" type="Sprite2D"]
+scale = Vector2(0.125, 0.125)

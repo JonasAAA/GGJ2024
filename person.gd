@@ -1,15 +1,14 @@
 class_name Person extends Area2D
 
 const happiness_per_sec: float = 0.5
-const required_happiness: float = 1
-const speed: float = 100
 
-@onready
-var path: Path2D = $Path
-@onready
-var path_follow: PathFollow2D = $Path/PathFollow
-@onready
-var sprite: Sprite2D = $Sprite
+@onready var path: Path2D = $Path
+@onready var path_follow: PathFollow2D = $Path/PathFollow
+@onready var sprites: Array[Sprite2D] = [$Sprite0, $Sprite1, $Sprite2, $Sprite3]
+var sprite: Sprite2D
+var speed: float = 100
+var required_happiness: float = 1
+
 var clown_count: int
 var progress: float
 var happiness: float
@@ -17,8 +16,13 @@ var was_happy: bool
 
 signal turn_happy
 
-func initialize(curve: Curve2D) -> void:
+func initialize(spriteInd: int, curve: Curve2D, _speed: float, _required_happiness: float) -> void:
+	sprite = sprites[spriteInd]
+	sprite.visible = true
 	path.curve = curve
+	#sprite.texture = texture
+	speed = _speed
+	required_happiness = _required_happiness
 	clown_count = 0
 	progress = 0
 	clown_count = 0

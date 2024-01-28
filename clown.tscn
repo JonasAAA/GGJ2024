@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cqqv4ixeocdr1"]
 
 [ext_resource type="Script" path="res://clown.gd" id="1_mfdmk"]
-[ext_resource type="Texture2D" uid="uid://bf7ujaxsd7633" path="res://images/clowns/Baloons_Clown.tga" id="2_3sw4y"]
+[ext_resource type="Texture2D" uid="uid://bf7ujaxsd7633" path="res://images/clowns/clown_baloon.tga" id="2_3sw4y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ctuyi"]
 radius = 24.0
