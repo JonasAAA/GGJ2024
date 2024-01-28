@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhwijpf10gwqw"
-path="res://.godot/imported/baloons.tga-e7156dc9e6fa12f1d13de73a69dbc1e2.ctex"
+uid="uid://co8l6hp2vbc56"
+path="res://.godot/imported/area_1_pill.tga-d8906a18183a867d01567408b65a7340.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/clowns/baloons.tga"
-dest_files=["res://.godot/imported/baloons.tga-e7156dc9e6fa12f1d13de73a69dbc1e2.ctex"]
+source_file="res://images/clowns/area_1_pill.tga"
+dest_files=["res://.godot/imported/area_1_pill.tga-d8906a18183a867d01567408b65a7340.ctex"]
 
 [params]
 
