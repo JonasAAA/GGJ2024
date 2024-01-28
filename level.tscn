@@ -1,26 +1,32 @@
-[gd_scene load_steps=7 format=3 uid="uid://cmeu7jpchxt8i"]
+[gd_scene load_steps=8 format=3 uid="uid://cmeu7jpchxt8i"]
 
 [ext_resource type="Script" path="res://level.gd" id="1_ms3lu"]
 [ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://level_ui.tscn" id="2_la7km"]
-[ext_resource type="Texture2D" uid="uid://boc8ya2ggb7mh" path="res://images/arena.png" id="3_ymvrm"]
+[ext_resource type="Texture2D" uid="uid://dq45al0750fvg" path="res://images/arena/test arena.jpg" id="2_w1bci"]
 
 [sub_resource type="Curve2D" id="Curve2D_2y1pd"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 909, 1082, 0, 0, 0, 0, 909, 985, 0, 0, 0, 0, 455, 923, 0, 0, 0, 0, 338, 727, 0, 0, 0, 0, 137, 131, 0, 0, 0, 0, 1842, 151, 0, 0, 0, 0, 1831, 949, 0, 0, 0, 0, 1031, 977, 0, 0, 0, 0, 1033, 1079)
+"points": PackedVector2Array(0, 0, 0, 0, 888, 1156, -1.41421, 103.238, 1.41421, -103.238, 927, 944, 106.066, 14.1421, -106.066, -14.1421, 795, 805, 41.0122, 86.267, -41.0122, -86.267, 576, 706, -84.8528, 73.5391, 84.8528, -73.5391, 630, 408, -131.373, -30.7244, 131.373, 30.7244, 869, 350, -83.1892, 19.7319, 83.1892, -19.7319, 1168, 348, -15.5563, -80.6102, 15.5563, 80.6102, 1412, 510, 89.0955, -50.9117, -89.0955, 50.9117, 1316, 674, 55.1543, -25.4558, -55.1543, 25.4558, 1078, 774, -26.8701, -104.652, 26.8701, 104.652, 982, 947, 0, 0, 0, 0, 1028, 1111)
 }
-point_count = 9
+point_count = 12
+
+[sub_resource type="Curve2D" id="Curve2D_dq42w"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 390, 224, -40.3175, -120.952, 40.3175, 120.952, 484, 375, -3.77976, -81.8949, 3.77976, 81.8949, 455, 600, -80.6349, -41.5774, 80.6349, 41.5774, 577, 765, -160.01, -12.5992, 160.01, 12.5992, 876, 850, -128.512, 60.4762, 128.512, -60.4762, 1222, 771, 14.5177, 129.943, -14.5177, -129.943, 1379, 515, 50.2253, 26.6877, -50.2253, -26.6877, 1198, 337, 82.6381, -9.53517, -82.6381, 9.53517, 1049, 350, 104.887, 23.3082, -104.887, -23.3082, 856, 343, 110.184, -96.4111, -110.184, 96.4111, 605, 424, 127.136, -81.5787, -127.136, 81.5787, 384, 656, 0, 0, 0, 0, 110, 828)
+}
+point_count = 13
 
 [sub_resource type="Curve2D" id="Curve2D_65ogh"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 532, 220, 0, 0, 0, 0, 297, 465, 0, 0, 0, 0, 274, 148, 0, 0, 0, 0, 532, 220)
+"points": PackedVector2Array(0, 0, 0, 0, 140, 782, -77.3408, 49.7948, 77.3408, -49.7948, 282, 757, -136.671, -5.29732, 136.671, 5.29732, 513, 630, -114.422, -95.3517, 114.422, 95.3517, 862, 807, 0, 0, 0, 0, 930, 1155)
 }
-point_count = 4
+point_count = 5
 
 [sub_resource type="Curve2D" id="Curve2D_ok15b"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 863, 765, 0, 0, 0, 0, 400, 491, 0, 0, 0, 0, 621, 247, 0, 0, 0, 0, 1507, 183, 0, 0, 0, 0, 877, 981)
+"points": PackedVector2Array(0, 0, 0, 0, 1760, 352, 118.981, -38.1637, -118.981, 38.1637, 1525, 426, 4.48985, -105.511, -4.48985, 105.511, 1445, 615, 165.322, 1.09202, -165.322, -1.09202, 1166, 743, 111.489, 41.5412, -111.489, -41.5412, 744, 800, 26.8937, 110.661, -26.8937, -110.661, 524, 635, 46.4764, 115.888, -46.4764, -115.888, 519, 417, 0, 0, 0, 0, 372, 244)
 }
-point_count = 5
+point_count = 8
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_ms3lu")
@@ -34,18 +40,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_ymvrm")
+texture = ExtResource("2_w1bci")
 
-[node name="Path1" type="Path2D" parent="."]
+[node name="Path0" type="Path2D" parent="."]
+visible = false
 curve = SubResource("Curve2D_2y1pd")
 
+[node name="Path1" type="Path2D" parent="."]
+visible = false
+curve = SubResource("Curve2D_dq42w")
+
 [node name="Path2" type="Path2D" parent="."]
+visible = false
 curve = SubResource("Curve2D_65ogh")
 
 [node name="Path3" type="Path2D" parent="."]
 curve = SubResource("Curve2D_ok15b")
 
 [node name="UICanvas" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="LevelUI" parent="UICanvas" instance=ExtResource("2_la7km")]
 metadata/_edit_lock_ = true

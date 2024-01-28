@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhwijpf10gwqw"
-path="res://.godot/imported/baloons.tga-e7156dc9e6fa12f1d13de73a69dbc1e2.ctex"
+uid="uid://c8rc2qgdj8fj3"
+path="res://.godot/imported/area_0_circle.tga-e7357bd3a6a38a302979dcf6fffdc033.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/clowns/baloons.tga"
-dest_files=["res://.godot/imported/baloons.tga-e7156dc9e6fa12f1d13de73a69dbc1e2.ctex"]
+source_file="res://images/clowns/area_0_circle.tga"
+dest_files=["res://.godot/imported/area_0_circle.tga-e7357bd3a6a38a302979dcf6fffdc033.ctex"]
 
 [params]
 
