@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://k2g2mqng6qkl"]
+[gd_scene load_steps=17 format=3 uid="uid://k2g2mqng6qkl"]
 
 [ext_resource type="Script" path="res://person.gd" id="1_6mymm"]
 [ext_resource type="PackedScene" uid="uid://jmskjcg1w0k2" path="res://character_sprite.tscn" id="2_8o5js"]
@@ -61,34 +61,6 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("sprite_laugh_meter:frame")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [3]
-}
-
-[sub_resource type="Animation" id="Animation_3dwso"]
-resource_name = "anim_laugh_indicator"
-step = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("sprite_laugh_meter:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4]
 }
 
 [sub_resource type="Animation" id="Animation_h17cy"]
@@ -190,7 +162,6 @@ tracks/2/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vcmv7"]
 _data = {
 "RESET": SubResource("Animation_b3wtl"),
-"anim_laugh_indicator": SubResource("Animation_3dwso"),
 "walking_happy": SubResource("Animation_h17cy"),
 "walking_normal": SubResource("Animation_qghcn")
 }
@@ -265,7 +236,6 @@ rotation = 0.15757
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_207t0")
 hframes = 5
-frame = 3
 
 [node name="AnimationPlayerEmotionIndicator" type="AnimationPlayer" parent="."]
 libraries = {
