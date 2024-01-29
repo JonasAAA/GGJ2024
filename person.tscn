@@ -1,10 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://k2g2mqng6qkl"]
+[gd_scene load_steps=18 format=3 uid="uid://k2g2mqng6qkl"]
 
 [ext_resource type="Script" path="res://person.gd" id="1_6mymm"]
 [ext_resource type="PackedScene" uid="uid://jmskjcg1w0k2" path="res://character_sprite.tscn" id="2_8o5js"]
 [ext_resource type="Texture2D" uid="uid://hbllaclfy4wv" path="res://images/visitors/laugh.tga" id="4_207t0"]
 [ext_resource type="Texture2D" uid="uid://dx5otixfxbp36" path="res://images/visitors/visitor_3.tga" id="6_6pluq"]
+[ext_resource type="Texture2D" uid="uid://d4lj5i7lgwqyx" path="res://images/visitors/visitor_0.tga" id="6_nj5aj"]
+[ext_resource type="Texture2D" uid="uid://iyb8ycnru1i6" path="res://images/visitors/visitor_1.tga" id="7_ocp7o"]
 [ext_resource type="PackedScene" uid="uid://x5vuvfagb6h1" path="res://emotion_indicator.tscn" id="7_ywff2"]
+[ext_resource type="Texture2D" uid="uid://yph4y8kswchs" path="res://images/visitors/visitor_2.tga" id="8_cxdrr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r2nvs"]
 radius = 4.47214
@@ -70,6 +73,22 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_3dwso"]
+resource_name = "anim_laugh_indicator"
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite_laugh_meter:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
 }
 
 [sub_resource type="Animation" id="Animation_h17cy"]
@@ -168,22 +187,6 @@ tracks/2/keys = {
 "values": [-0.0872665, 0.0872665, -0.0872665, 0.0872665]
 }
 
-[sub_resource type="Animation" id="Animation_3dwso"]
-resource_name = "anim_laugh_indicator"
-step = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("sprite_laugh_meter:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vcmv7"]
 _data = {
 "RESET": SubResource("Animation_b3wtl"),
@@ -273,3 +276,21 @@ libraries = {
 visible = false
 position = Vector2(0, -17)
 scale = Vector2(0.0625, 0.0625)
+
+[node name="Sprite0" parent="." instance=ExtResource("2_8o5js")]
+visible = false
+texture = ExtResource("6_nj5aj")
+
+[node name="Sprite1" parent="." instance=ExtResource("2_8o5js")]
+visible = false
+texture = ExtResource("7_ocp7o")
+
+[node name="Sprite2" parent="." instance=ExtResource("2_8o5js")]
+visible = false
+scale = Vector2(0.015625, 0.015625)
+texture = ExtResource("8_cxdrr")
+
+[node name="Sprite3" parent="." instance=ExtResource("2_8o5js")]
+visible = false
+scale = Vector2(0.00195313, 0.00195313)
+texture = ExtResource("6_6pluq")

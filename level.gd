@@ -49,9 +49,9 @@ func _process(delta: float) -> void:
 	people = not_done_people
 	
 	if randf() < 0.01:
-		#Wwise.post_event_id(AK.EVENTS.CLOWNIDLE, self)
+		Wwise.post_event_id(AK.EVENTS.CLOWNIDLE, self)
 	if randf() < 0.0001:
-		#Wwise.post_event_id(AK.EVENTS.CLOWNTONGUEWHISTLE, self)
+		Wwise.post_event_id(AK.EVENTS.CLOWNTONGUEWHISTLE, self)
 	if randf() < 0.1 * delta:
 		spawn_person()
 	if clown_to_place != null:
