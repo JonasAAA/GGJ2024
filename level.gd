@@ -3,7 +3,7 @@ extends Node2D
 const max_clowns: int = 2
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
-@onready var paths: Array[Path2D] = [$Path0, $Path1, $Path2, $Path3]
+@onready var paths: Array[Path2D] = [$Path0, $Path1, $Path2, $Path3, $Path4, $Path5, $Path6]
 @onready var level_ui: LevelUI = $UICanvas/LevelUI
 var people: Array[Person] = []
 var clowns: Array[Clown] = []
@@ -52,7 +52,7 @@ func _process(delta: float) -> void:
 		Wwise.post_event_id(AK.EVENTS.CLOWNIDLE, self)
 	if randf() < 0.0001:
 		Wwise.post_event_id(AK.EVENTS.CLOWNTONGUEWHISTLE, self)
-	if randf() < 0.1 * delta:
+	if randf() < 0.3 * delta:
 		spawn_person()
 	if clown_to_place != null:
 		clown_to_place.position = get_mouse_pos()
