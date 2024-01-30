@@ -9,8 +9,8 @@ var missed: int = 0 : set = set_missed
 
 func set_score(value: int) -> void:
 	score = value
-	score_label.text = "Score: {score}".format({"score": value})
+	score_label.text = "{score}".format({"score": value})
 
 func set_missed(value: int) -> void:
 	missed = value
-	missed_label.text = "Missed: {missed}".format({"missed": missed})
+	missed_label.text = "{missed}".format({"missed": missed})
