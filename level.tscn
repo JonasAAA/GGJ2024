@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cmeu7jpchxt8i"]
+[gd_scene load_steps=9 format=3 uid="uid://cmeu7jpchxt8i"]
 
 [ext_resource type="Script" path="res://level.gd" id="1_ms3lu"]
 [ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://level_ui.tscn" id="2_la7km"]
-[ext_resource type="Texture2D" uid="uid://boc8ya2ggb7mh" path="res://images/arena.png" id="3_ymvrm"]
+[ext_resource type="Texture2D" uid="uid://chofybc1jqj3x" path="res://images/arena/background_1_bottom.tga" id="3_pf355"]
+[ext_resource type="Texture2D" uid="uid://ct3n0ie575v4v" path="res://images/arena/background_1_top.tga" id="4_q7p8x"]
 
 [sub_resource type="Curve2D" id="Curve2D_2y1pd"]
 _data = {
@@ -33,17 +34,20 @@ script = ExtResource("1_ms3lu")
 
 [node name="BackgroundCanvas" type="CanvasLayer" parent="."]
 layer = -1
+visible = false
 
 [node name="Background" type="TextureRect" parent="BackgroundCanvas"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -55.0
+offset_top = -40.0
+offset_right = 55.0
+offset_bottom = 40.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_ymvrm")
 
 [node name="Path0" type="Path2D" parent="."]
-visible = false
 curve = SubResource("Curve2D_2y1pd")
 
 [node name="Path1" type="Path2D" parent="."]
@@ -62,3 +66,17 @@ curve = SubResource("Curve2D_ok15b")
 
 [node name="LevelUI" parent="UICanvas" instance=ExtResource("2_la7km")]
 metadata/_edit_lock_ = true
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+position = Vector2(568, 319)
+scale = Vector2(0.46, 0.46)
+
+[node name="Background1Bottom" type="Sprite2D" parent="CanvasGroup"]
+z_index = -1
+position = Vector2(852, 484)
+texture = ExtResource("3_pf355")
+
+[node name="Background1Top" type="Sprite2D" parent="CanvasGroup"]
+z_index = 1
+position = Vector2(852, 484)
+texture = ExtResource("4_q7p8x")
