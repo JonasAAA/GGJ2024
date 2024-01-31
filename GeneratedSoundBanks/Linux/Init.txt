@@ -15,7 +15,12 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	825489254	MusicGameplay			\Default Work Unit\Master Audio Bus\MusicGameplay	
+	1747186245	MusicFill			\Default Work Unit\Master Audio Bus\MusicFill	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	864521498	Peak Limiter (Custom)	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="732818365" Type="User" Language="SFX" Hash="{4EEE9866-E594-F5F7-741F-60881E5E63FA}">
+		<SoundBank Id="732818365" Type="User" Language="SFX" Hash="{889E8F23-EF6F-4CB2-E103-DB98A15660A5}">
 			<ShortName>ClownSound</ShortName>
 			<Path>ClownSound.bnk</Path>
 			<Media>
@@ -401,17 +401,21 @@
 						<MediaRef Id="1016902541"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1747186245" Name="MusicFill">
+				<Event Id="1174935145" Name="MusicFillFail">
 					<MediaRefs>
-						<MediaRef Id="59278056"/>
-						<MediaRef Id="244493744"/>
 						<MediaRef Id="464202147"/>
-						<MediaRef Id="706297674"/>
-						<MediaRef Id="824531458"/>
 						<MediaRef Id="907741672"/>
 						<MediaRef Id="934154088"/>
 						<MediaRef Id="986105576"/>
 						<MediaRef Id="1033980712"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="220193526" Name="MusicFillSuccess">
+					<MediaRefs>
+						<MediaRef Id="59278056"/>
+						<MediaRef Id="244493744"/>
+						<MediaRef Id="706297674"/>
+						<MediaRef Id="824531458"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="825489254" Name="MusicGameplay">
@@ -419,6 +423,10 @@
 						<MediaRef Id="429455388"/>
 						<MediaRef Id="837972734"/>
 						<MediaRef Id="943210361"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4082046343" Name="MusicMenu">
+					<MediaRefs>
 						<MediaRef Id="1034271680"/>
 					</MediaRefs>
 				</Event>
@@ -449,17 +457,28 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EC0ED9AA-0AFD-A7D0-9ACC-F0103A88F98D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{526D38B5-50D3-D681-D2B9-D4F72038A1E0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="864521498" Name="Peak Limiter (Custom)" LibName="Wwise Peak Limiter" LibId="7208963"/>
+				</Custom>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
-				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="825489254" Name="MusicGameplay"/>
+				<Bus Id="1747186245" Name="MusicFill"/>
+				<Bus Id="3803692087" Name="Master Audio Bus">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="864521498"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
 			</Busses>
 			<AcousticTextures>
 				<AcousticTexture Id="504532776" Name="Brick">
@@ -591,5 +610,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C0A866C8-24C8-D51C-7880-18DE540A9B7F}</FileHash>
+	<FileHash>{FEB1207A-1874-85FC-CB73-F4D55666E598}</FileHash>
 </SoundBanksInfo>
