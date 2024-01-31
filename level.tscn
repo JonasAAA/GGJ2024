@@ -1,9 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://cmeu7jpchxt8i"]
+[gd_scene load_steps=16 format=3 uid="uid://cmeu7jpchxt8i"]
 
 [ext_resource type="Script" path="res://level.gd" id="1_ms3lu"]
 [ext_resource type="Texture2D" uid="uid://b5kowdunhe6qy" path="res://images/arena/ui_board.tga" id="2_hhggh"]
 [ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://level_ui.tscn" id="2_la7km"]
+[ext_resource type="Texture2D" uid="uid://sykp8vfpbwke" path="res://images/arena/ui_quit_normal.tga" id="2_p8bxb"]
 [ext_resource type="Texture2D" uid="uid://nkclsbvywwmw" path="res://images/arena/ui_faces.tga" id="3_1pgh4"]
+[ext_resource type="Texture2D" uid="uid://dj2k7i2s2fw2r" path="res://images/arena/ui_quit_pressed.tga" id="3_muyww"]
 [ext_resource type="Texture2D" uid="uid://chofybc1jqj3x" path="res://images/arena/background_1_bottom.tga" id="3_pf355"]
 [ext_resource type="Texture2D" uid="uid://ct3n0ie575v4v" path="res://images/arena/background_1_top.tga" id="4_q7p8x"]
 
@@ -90,6 +92,17 @@ curve = SubResource("Curve2D_ygcc0")
 
 [node name="UICanvas" type="CanvasLayer" parent="."]
 
+[node name="CanvasGroup" type="CanvasGroup" parent="UICanvas"]
+position = Vector2(28.4, 30.65)
+scale = Vector2(0.25, 0.25)
+
+[node name="button_quit" type="TextureButton" parent="UICanvas/CanvasGroup"]
+offset_right = 512.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_p8bxb")
+texture_pressed = ExtResource("3_muyww")
+texture_hover = ExtResource("3_muyww")
+
 [node name="UiBoard" type="Sprite2D" parent="UICanvas"]
 z_index = 2
 position = Vector2(1701, 119)
@@ -122,16 +135,16 @@ position = Vector2(1945, 55)
 z_index = 3
 metadata/_edit_lock_ = true
 
-[node name="CanvasGroup" type="CanvasGroup" parent="."]
+[node name="Background" type="CanvasGroup" parent="."]
 position = Vector2(568, 319)
 scale = Vector2(0.46, 0.46)
 
-[node name="Background1Bottom" type="Sprite2D" parent="CanvasGroup"]
+[node name="Background1Bottom" type="Sprite2D" parent="Background"]
 z_index = -1
 position = Vector2(852, 484)
 texture = ExtResource("3_pf355")
 
-[node name="Background1Top" type="Sprite2D" parent="CanvasGroup"]
+[node name="Background1Top" type="Sprite2D" parent="Background"]
 z_index = 1
 position = Vector2(852, 484)
 texture = ExtResource("4_q7p8x")
