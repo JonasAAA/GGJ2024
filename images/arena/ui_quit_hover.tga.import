@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhwijpf10gwqw"
-path="res://.godot/imported/baloons.tga-e7156dc9e6fa12f1d13de73a69dbc1e2.ctex"
+uid="uid://h740gm2rp6ej"
+path="res://.godot/imported/ui_quit_hover.tga-22cbf048c480f040603beab35ebe68ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/clowns/baloons.tga"
-dest_files=["res://.godot/imported/baloons.tga-e7156dc9e6fa12f1d13de73a69dbc1e2.ctex"]
+source_file="res://images/arena/ui_quit_hover.tga"
+dest_files=["res://.godot/imported/ui_quit_hover.tga-22cbf048c480f040603beab35ebe68ee.ctex"]
 
 [params]
 
