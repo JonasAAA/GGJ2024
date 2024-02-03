@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://3hbhw6557itd"]
 
-[ext_resource type="Script" path="res://level_ui.gd" id="1_88yan"]
-[ext_resource type="LabelSettings" uid="uid://b8fv2opbu473k" path="res://label_settings.tres" id="2_5gndu"]
+[ext_resource type="Script" path="res://ui/level_ui.gd" id="1_88yan"]
+[ext_resource type="LabelSettings" uid="uid://b8fv2opbu473k" path="res://ui/label_settings.tres" id="2_5gndu"]
 
 [node name="LevelUI" type="Control"]
 layout_mode = 3

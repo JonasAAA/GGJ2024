@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Clownfection"
-run/main_scene="res://level.tscn"
+run/main_scene="res://ui/main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
+GlobalState="*res://global_state.tscn"
 
 [debug]
 

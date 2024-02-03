@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://level.gd" id="1_ms3lu"]
 [ext_resource type="Texture2D" uid="uid://b5kowdunhe6qy" path="res://images/arena/ui_board.tga" id="2_hhggh"]
-[ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://level_ui.tscn" id="2_la7km"]
+[ext_resource type="PackedScene" uid="uid://3hbhw6557itd" path="res://ui/level_ui.tscn" id="2_la7km"]
 [ext_resource type="Texture2D" uid="uid://sykp8vfpbwke" path="res://images/arena/ui_quit_normal.tga" id="2_p8bxb"]
 [ext_resource type="Texture2D" uid="uid://nkclsbvywwmw" path="res://images/arena/ui_faces.tga" id="3_1pgh4"]
 [ext_resource type="Texture2D" uid="uid://dj2k7i2s2fw2r" path="res://images/arena/ui_quit_pressed.tga" id="3_muyww"]
@@ -96,7 +96,7 @@ curve = SubResource("Curve2D_ygcc0")
 position = Vector2(28.4, 30.65)
 scale = Vector2(0.25, 0.25)
 
-[node name="button_quit" type="TextureButton" parent="UICanvas/CanvasGroup"]
+[node name="Quit" type="TextureButton" parent="UICanvas/CanvasGroup"]
 offset_right = 512.0
 offset_bottom = 512.0
 texture_normal = ExtResource("2_p8bxb")
@@ -148,3 +148,5 @@ texture = ExtResource("3_pf355")
 z_index = 1
 position = Vector2(852, 484)
 texture = ExtResource("4_q7p8x")
+
+[connection signal="pressed" from="UICanvas/CanvasGroup/Quit" to="." method="_on_quit_pressed"]

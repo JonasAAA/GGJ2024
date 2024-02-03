@@ -94,7 +94,10 @@ func person_turned_happy() -> void:
 	Wwise.post_event_id(AK.EVENTS.CLOWNSUCCESS, self)
 	Wwise.post_event_id(AK.EVENTS.PERSONCONVERTED, self)
 	if randf() < 0.5:
-		Wwise.post_event_id(AK.EVENTS.MUSICFILL, self)
+		Wwise.post_event_id(AK.EVENTS.MUSICFILLSUCCESS, self)
 
 func rand_ind(array: Array) -> int:
 	return randi_range(0, array.size() - 1)
+
+func _on_quit_pressed() -> void:
+	get_tree().change_scene_to_packed(GlobalState.main_menu_scene)

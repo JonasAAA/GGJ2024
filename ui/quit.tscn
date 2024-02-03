@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0wdi2xwde6ge"]
+
+[ext_resource type="Texture2D" uid="uid://sykp8vfpbwke" path="res://images/arena/ui_quit_normal.tga" id="1_m5vvo"]
+[ext_resource type="Texture2D" uid="uid://dj2k7i2s2fw2r" path="res://images/arena/ui_quit_pressed.tga" id="2_vlc3j"]
+
+[node name="Exit" type="TextureButton"]
+offset_right = 125.0
+offset_bottom = 129.0
+texture_normal = ExtResource("1_m5vvo")
+texture_pressed = ExtResource("2_vlc3j")
+ignore_texture_size = true
+stretch_mode = 4

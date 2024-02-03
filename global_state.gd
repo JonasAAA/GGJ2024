@@ -1,5 +1,9 @@
 extends Node
 
+var main_menu_scene: PackedScene = preload("res://ui/main_menu.tscn")
+var level_scene: PackedScene = preload("res://level.tscn")
+var credits_scene: PackedScene = preload("res://ui/credits.tscn")
+
 func _ready() -> void:
 	Wwise.load_bank("Init")
 	Wwise.load_bank("Demo_Soundbank")
@@ -7,7 +11,3 @@ func _ready() -> void:
 	# Demo
 	Wwise.register_listener(self)
 	Wwise.register_game_obj(self, "Demo Game Object")
-
-func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("ui_accept"):
-		Wwise.post_event_id(AK.EVENTS.DEMO_EVENT, self)
