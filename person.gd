@@ -8,9 +8,7 @@ const required_happiness: float = 1
 @onready var sprites: Array[Sprite2D] = [$Sprite0, $Sprite1, $Sprite2, $Sprite3]
 @onready var sprite: Sprite2D = $transform/sprite_visitor
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-#@onready var emotion_indicator_player: AnimationPlayer = $emotion_indicator/AnimationPlayer
 @onready var emotion_indicator_player: AnimationPlayer = $AnimationPlayerEmotionIndicator
-@onready var emotion_indicator_sprite: Sprite2D = $emotion_indicator/sprite_laugh_meter
 var speed: float
 var starting_happiness: float
 
@@ -43,12 +41,10 @@ func _process(delta: float) -> void:
 		animation_player.play("walking_happy")
 		turn_happy.emit()
 	if is_happy:
-		emotion_indicator_sprite.modulate = Color(0, 1, 0)
 		emotion_indicator_player.pause()
 	else:
 		emotion_indicator_player.seek(happiness / required_happiness, true)
 		emotion_indicator_player.play("anim_laugh")
-		emotion_indicator_sprite.modulate = Color(happiness / required_happiness, happiness / required_happiness, 0)
 	was_happy = is_happy
 	#var strength: float = 1 - clown_count * 0.1
 	#sprite.modulate = Color(strength, strength, strength, strength)

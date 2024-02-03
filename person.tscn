@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://k2g2mqng6qkl"]
+[gd_scene load_steps=16 format=3 uid="uid://k2g2mqng6qkl"]
 
 [ext_resource type="Script" path="res://person.gd" id="1_6mymm"]
 [ext_resource type="PackedScene" uid="uid://jmskjcg1w0k2" path="res://character_sprite.tscn" id="2_8o5js"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://dx5otixfxbp36" path="res://images/visitors/visitor_3.tga" id="6_6pluq"]
 [ext_resource type="Texture2D" uid="uid://d4lj5i7lgwqyx" path="res://images/visitors/visitor_0.tga" id="6_nj5aj"]
 [ext_resource type="Texture2D" uid="uid://iyb8ycnru1i6" path="res://images/visitors/visitor_1.tga" id="7_ocp7o"]
-[ext_resource type="PackedScene" uid="uid://x5vuvfagb6h1" path="res://emotion_indicator.tscn" id="7_ywff2"]
 [ext_resource type="Texture2D" uid="uid://yph4y8kswchs" path="res://images/visitors/visitor_2.tga" id="8_cxdrr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r2nvs"]
@@ -265,11 +264,6 @@ hframes = 5
 libraries = {
 "": SubResource("AnimationLibrary_342f1")
 }
-
-[node name="emotion_indicator" parent="." instance=ExtResource("7_ywff2")]
-visible = false
-position = Vector2(0, -17)
-scale = Vector2(0.0625, 0.0625)
 
 [node name="Sprite0" parent="." instance=ExtResource("2_8o5js")]
 visible = false
