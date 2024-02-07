@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dyv53rjaqvlj6" path="res://images/arena/ui_credits_normal.tga" id="5_ae4jf"]
 [ext_resource type="Texture2D" uid="uid://dvvww7n7pdm0m" path="res://images/arena/ui_play_hover.tga" id="6_p15ee"]
 [ext_resource type="Texture2D" uid="uid://dp7sbd2exfh25" path="res://images/arena/ui_credits_pressed.tga" id="6_ye7vq"]
-[ext_resource type="PackedScene" uid="uid://b0wdi2xwde6ge" path="res://ui/quit.tscn" id="8_u8mbx"]
 [ext_resource type="Texture2D" uid="uid://coo8ixf1omieg" path="res://images/arena/ui_credits_hover.tga" id="9_2ob83"]
+[ext_resource type="PackedScene" uid="uid://b0wdi2xwde6ge" path="res://ui/exit.tscn" id="10_xevjm"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -90,7 +90,7 @@ texture_hover = ExtResource("9_2ob83")
 ignore_texture_size = true
 stretch_mode = 4
 
-[node name="Quit" parent="." instance=ExtResource("8_u8mbx")]
+[node name="Quit" parent="." instance=ExtResource("10_xevjm")]
 layout_mode = 2
 offset_left = 983.0
 offset_top = 763.0

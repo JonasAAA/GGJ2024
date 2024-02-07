@@ -1,10 +1,12 @@
 extends Node2D
 
 const max_clowns: int = 2
+const miss_people_to_lose: int = 1
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
 @onready var paths: Array[Path2D] = [$Path0, $Path1, $Path2, $Path3, $Path4, $Path5, $Path6]
 @onready var level_ui: LevelUI = $UICanvas/ui_pos/LevelUI
+@onready var game_over_ui: Control = $UICanvas/GameOver
 var people: Array[Person] = []
 var clowns: Array[Clown] = []
 var clown_to_place: Clown = null
@@ -16,6 +18,7 @@ func _ready() -> void:
 	spawn_person()
 	set_new_clown_to_place()
 	level_ui.score = 0
+	game_over_ui.hide()
 	
 func _on_tree_exited() -> void:
 	GlobalState.play_menu_music()
@@ -42,6 +45,9 @@ func _process(delta: float) -> void:
 			person.turn_happy.disconnect(person_turned_happy)
 			if not person.was_happy:
 				level_ui.missed += 1
+				if level_ui.missed >= miss_people_to_lose:
+					game_over_ui.show()
+					get_tree().paused = true
 				Wwise.post_event_id(AK.EVENTS.MUSICFILLFAIL, self)
 				Wwise.post_event_id(AK.EVENTS.CLOWNFAIL, self)
 		else:
@@ -101,4 +107,5 @@ func rand_ind(array: Array) -> int:
 	return randi_range(0, array.size() - 1)
 
 func _on_quit_pressed() -> void:
+	get_tree().paused = false
 	get_tree().change_scene_to_packed(GlobalState.main_menu_scene)

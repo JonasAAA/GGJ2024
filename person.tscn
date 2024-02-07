@@ -238,6 +238,7 @@ position = Vector2(339, 458)
 rotation = -2.51035
 
 [node name="CollisionShape" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, 58)
 shape = SubResource("CircleShape2D_r2nvs")
 
