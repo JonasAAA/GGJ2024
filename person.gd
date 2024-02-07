@@ -55,7 +55,7 @@ func _physics_process(delta: float) -> void:
 
 func update_position() -> void:
 	path_follow.progress = progress
-	position = path_follow.position
+	position = path_follow.position - Vector2(0, 58)
 
 #func _process(delta: float) -> void:
 	#progress += delta * 100
