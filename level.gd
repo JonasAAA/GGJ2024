@@ -10,17 +10,15 @@ var clowns: Array[Clown] = []
 var clown_to_place: Clown = null
 
 func _ready() -> void:
-	Wwise.load_bank("Init")
-	Wwise.load_bank("ClownSound")
-	
-	Wwise.register_listener(self)
 	Wwise.register_game_obj(self, "Level")
-	
-	Wwise.post_event_id(AK.EVENTS.MUSICGAMEPLAY, self)
+	GlobalState.play_gameplay_music()
 	
 	spawn_person()
 	set_new_clown_to_place()
 	level_ui.score = 0
+	
+func _on_tree_exited() -> void:
+	GlobalState.play_menu_music()
 	
 func clown_entered(area: Area2D) -> void:
 	var person: Person = area as Person
@@ -44,12 +42,16 @@ func _process(delta: float) -> void:
 			person.turn_happy.disconnect(person_turned_happy)
 			if not person.was_happy:
 				level_ui.missed += 1
+				Wwise.post_event_id(AK.EVENTS.MUSICFILLFAIL, self)
+				Wwise.post_event_id(AK.EVENTS.CLOWNFAIL, self)
 		else:
 			not_done_people.append(person)
 	people = not_done_people
 	
 	if randf() < 0.01:
 		Wwise.post_event_id(AK.EVENTS.CLOWNIDLE, self)
+	if randf() < 0.01:
+		Wwise.post_event_id(AK.EVENTS.PERSONIDLE, self)
 	if randf() < 0.0001:
 		Wwise.post_event_id(AK.EVENTS.CLOWNTONGUEWHISTLE, self)
 	if randf() < 0.3 * delta:
@@ -93,8 +95,7 @@ func person_turned_happy() -> void:
 	level_ui.score += 1
 	Wwise.post_event_id(AK.EVENTS.CLOWNSUCCESS, self)
 	Wwise.post_event_id(AK.EVENTS.PERSONCONVERTED, self)
-	if randf() < 0.5:
-		Wwise.post_event_id(AK.EVENTS.MUSICFILLSUCCESS, self)
+	Wwise.post_event_id(AK.EVENTS.MUSICFILLSUCCESS, self)
 
 func rand_ind(array: Array) -> int:
 	return randi_range(0, array.size() - 1)

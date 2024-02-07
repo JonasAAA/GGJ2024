@@ -149,4 +149,5 @@ z_index = 1
 position = Vector2(852, 484)
 texture = ExtResource("4_q7p8x")
 
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
 [connection signal="pressed" from="UICanvas/CanvasGroup/Quit" to="." method="_on_quit_pressed"]

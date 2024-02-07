@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://tjapy4y3brww"]
+[gd_scene load_steps=11 format=3 uid="uid://tjapy4y3brww"]
 
 [ext_resource type="Script" path="res://ui/main_menu.gd" id="1_2rrne"]
 [ext_resource type="Texture2D" uid="uid://cd5gc3lt1x3i4" path="res://images/arena/menu_bg.tga" id="1_raqvg"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://dp7sbd2exfh25" path="res://images/arena/ui_credits_pressed.tga" id="6_ye7vq"]
 [ext_resource type="PackedScene" uid="uid://b0wdi2xwde6ge" path="res://ui/quit.tscn" id="8_u8mbx"]
 [ext_resource type="Texture2D" uid="uid://coo8ixf1omieg" path="res://images/arena/ui_credits_hover.tga" id="9_2ob83"]
-[ext_resource type="Texture2D" uid="uid://h740gm2rp6ej" path="res://images/arena/ui_quit_hover.tga" id="11_n64xx"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -98,7 +97,6 @@ offset_top = 763.0
 offset_right = 1128.0
 offset_bottom = 917.0
 size_flags_horizontal = 8
-texture_hover = ExtResource("11_n64xx")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Credits" to="." method="_on_credits_pressed"]

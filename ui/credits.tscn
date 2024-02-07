@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ciwkmbtr1s30a"]
+[gd_scene load_steps=5 format=3 uid="uid://ciwkmbtr1s30a"]
 
 [ext_resource type="Script" path="res://ui/credits.gd" id="1_4rexw"]
 [ext_resource type="PackedScene" uid="uid://b0wdi2xwde6ge" path="res://ui/quit.tscn" id="1_mjx6p"]
 [ext_resource type="Texture2D" uid="uid://cd5gc3lt1x3i4" path="res://images/arena/menu_bg.tga" id="2_mcv63"]
 [ext_resource type="Texture2D" uid="uid://b5kowdunhe6qy" path="res://images/arena/ui_board.tga" id="3_kxe7s"]
-[ext_resource type="Texture2D" uid="uid://h740gm2rp6ej" path="res://images/arena/ui_quit_hover.tga" id="5_clja8"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -73,6 +72,5 @@ offset_right = 80.5
 offset_bottom = -92.0
 grow_horizontal = 2
 grow_vertical = 0
-texture_hover = ExtResource("5_clja8")
 
 [connection signal="pressed" from="Quit" to="." method="_on_exit_pressed"]
