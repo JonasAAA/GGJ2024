@@ -1,11 +1,25 @@
 class_name Person extends Area2D
 
+class PersonConfig:
+	var texture: Texture2D
+	var speed: float
+	
+	func _init(sprite: Sprite2D, _speed: float) -> void:
+		assert(sprite != null)
+		texture = sprite.texture
+		speed = _speed
+
 const happiness_per_sec: float = 0.5
 const required_happiness: float = 1
 
 @onready var path: Path2D = $Path
 @onready var path_follow: PathFollow2D = $Path/PathFollow
-@onready var sprites: Array[Sprite2D] = [$Sprite0, $Sprite1, $Sprite2, $Sprite3]
+@onready var personConfigs: Array[PersonConfig] = [
+	PersonConfig.new($Sprite0 as Sprite2D, 100),
+	PersonConfig.new($Sprite1 as Sprite2D, 200),
+	PersonConfig.new($Sprite2 as Sprite2D, 50),
+	PersonConfig.new($Sprite3 as Sprite2D, 100),
+]
 @onready var sprite: Sprite2D = $transform/sprite_visitor
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var emotion_indicator_player: AnimationPlayer = $AnimationPlayerEmotionIndicator
@@ -19,10 +33,10 @@ var was_happy: bool
 
 signal turn_happy
 
-func initialize(spriteInd: int, curve: Curve2D, _speed: float, _starting_happiness: float) -> void:
-	sprite.texture = sprites[spriteInd].texture
+func initialize(configInd: int, curve: Curve2D, _starting_happiness: float) -> void:
+	sprite.texture = personConfigs[configInd].texture
 	path.curve = curve
-	speed = _speed
+	speed = personConfigs[configInd].speed
 	starting_happiness = _starting_happiness
 	clown_count = 0
 	progress = 0
