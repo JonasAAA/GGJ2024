@@ -4,6 +4,8 @@ const max_clowns: int = 2
 const miss_people_to_lose: int = 3
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
+# Using this instead of global_state directly makes GDScript understand that GlobalState is of type GlobalStateType, not Node
+var global_state: GlobalStateType = GlobalState
 @onready var paths: Array[Path2D] = [$Path0, $Path1, $Path2, $Path3, $Path4, $Path5, $Path6]
 @onready var level_ui: LevelUI = $UICanvas/ui_pos/LevelUI
 @onready var game_over_ui: Control = $UICanvas/GameOver
@@ -13,7 +15,7 @@ var clown_to_place: Clown = null
 
 func _ready() -> void:
 	Wwise.register_game_obj(self, "Level")
-	GlobalState.play_gameplay_music()
+	global_state.play_gameplay_music()
 	
 	spawn_person()
 	set_new_clown_to_place()
@@ -21,7 +23,7 @@ func _ready() -> void:
 	game_over_ui.hide()
 	
 func _on_tree_exited() -> void:
-	GlobalState.play_menu_music()
+	global_state.play_menu_music()
 	
 func clown_entered(area: Area2D) -> void:
 	var person: Person = area as Person
@@ -108,4 +110,4 @@ func rand_ind(array: Array) -> int:
 
 func _on_quit_pressed() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_packed(GlobalState.main_menu_scene)
+	get_tree().change_scene_to_packed(global_state.main_menu_scene)

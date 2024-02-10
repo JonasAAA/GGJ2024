@@ -1,4 +1,4 @@
-extends Node
+class_name GlobalStateType extends Node
 
 @export_range(0, 10000) var music_fade_duration_millisec: int = 1000
 @export var music_transition_interpolation: AkUtils.AkCurveInterpolation = AkUtils.AK_CURVE_LINEAR

@@ -1,4 +1,7 @@
 extends Control
 
+# Using this instead of global_state directly makes GDScript understand that GlobalState is of type GlobalStateType, not Node
+var global_state: GlobalStateType = GlobalState
+
 func _on_exit_pressed() -> void:
-	get_tree().change_scene_to_packed(GlobalState.main_menu_scene)
+	get_tree().change_scene_to_packed(global_state.main_menu_scene)
