@@ -30,3 +30,22 @@ func play_gameplay_music() -> void:
 	Wwise.stop_event(playing_music_id, music_fade_duration_millisec, music_transition_interpolation)
 	playing_music_id = Wwise.post_event_id(AK.EVENTS.MUSICGAMEPLAY, self)
 	is_menu_playing = false
+	
+func rand_ind(array: Array) -> int:
+	return randi_range(0, array.size() - 1)
+
+func weighted_rand_ind(weights: Array[float]) -> int:
+	# Implementation based on https://github.com/godotengine/godot-proposals/issues/3948#issuecomment-1035074260
+	assert(weights.size() > 0)
+	var total_weight: float = 0.0
+	for weight in weights:
+		total_weight += weight
+	
+	var remaining_dist: float = randf() * total_weight
+	for i in weights.size():
+		remaining_dist -= weights[i]
+		if remaining_dist <= 0:
+			return i
+	# This should never happen
+	return 0
+	

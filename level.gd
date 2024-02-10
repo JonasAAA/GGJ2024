@@ -4,6 +4,7 @@ const max_clowns: int = 2
 const miss_people_to_lose: int = 3
 const person_template: PackedScene = preload("res://person.tscn")
 const clown_template: PackedScene = preload("res://clown.tscn")
+
 # Using this instead of global_state directly makes GDScript understand that GlobalState is of type GlobalStateType, not Node
 var global_state: GlobalStateType = GlobalState
 @onready var paths: Array[Path2D] = [$Path0, $Path1, $Path2, $Path3, $Path4, $Path5, $Path6]
@@ -12,8 +13,22 @@ var global_state: GlobalStateType = GlobalState
 var people: Array[Person] = []
 var clowns: Array[Clown] = []
 var clown_to_place: Clown = null
+var person_speed_weights: Array[float] = []
+var person_mood_weights: Array[float] = []
 
 func _ready() -> void:
+	person_speed_weights.resize(3)
+	# This controls how likely a person is to be of various speeds
+	person_speed_weights[Person.PersonSpeed.SLOW] = 1
+	person_speed_weights[Person.PersonSpeed.MEDIUM] = 2
+	person_speed_weights[Person.PersonSpeed.FAST] = 1
+	
+	# This controls how likely a person is to be of various starting moods
+	person_mood_weights.resize(3)
+	person_mood_weights[Person.PersonStartingMood.SAD] = 1
+	person_mood_weights[Person.PersonStartingMood.OK] = 2
+	person_mood_weights[Person.PersonStartingMood.HAPPY] = 1
+	
 	Wwise.register_game_obj(self, "Level")
 	global_state.play_gameplay_music()
 	
@@ -89,13 +104,13 @@ func get_mouse_pos() -> Vector2:
 func set_new_clown_to_place() -> void:
 	clown_to_place = clown_template.instantiate()
 	add_child(clown_to_place)
-	clown_to_place.initialize(rand_ind(clown_to_place.clown_shapes))
+	clown_to_place.initialize(global_state.rand_ind(clown_to_place.clown_shapes))
 	clown_to_place.position = get_mouse_pos()
 
 func spawn_person() -> void:
 	var person: Person = person_template.instantiate()
 	add_child(person)
-	person.initialize(rand_ind(person.personConfigs), paths[rand_ind(paths)].curve, 0)
+	person.initialize(global_state.weighted_rand_ind(person_speed_weights), global_state.weighted_rand_ind(person_mood_weights), paths[global_state.rand_ind(paths)].curve)
 	people.append(person)
 	person.turn_happy.connect(person_turned_happy)
 
@@ -104,9 +119,6 @@ func person_turned_happy() -> void:
 	Wwise.post_event_id(AK.EVENTS.CLOWNSUCCESS, self)
 	Wwise.post_event_id(AK.EVENTS.PERSONCONVERTED, self)
 	Wwise.post_event_id(AK.EVENTS.MUSICFILLSUCCESS, self)
-
-func rand_ind(array: Array) -> int:
-	return randi_range(0, array.size() - 1)
 
 func _on_quit_pressed() -> void:
 	get_tree().paused = false
