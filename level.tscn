@@ -57,7 +57,6 @@ script = ExtResource("1_ms3lu")
 
 [node name="BackgroundCanvas" type="CanvasLayer" parent="."]
 layer = -1
-visible = false
 
 [node name="Background" type="TextureRect" parent="BackgroundCanvas"]
 anchors_preset = 15
@@ -151,7 +150,7 @@ position = Vector2(852, 484)
 texture = ExtResource("3_pf355")
 
 [node name="Background1Top" type="Sprite2D" parent="Background"]
-z_index = 1
+z_index = 2
 position = Vector2(852, 484)
 texture = ExtResource("4_q7p8x")
 
