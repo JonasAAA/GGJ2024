@@ -94,6 +94,9 @@ curve = SubResource("Curve2D_ygcc0")
 [node name="UICanvas" type="CanvasLayer" parent="."]
 process_mode = 3
 
+[node name="GameOver" parent="UICanvas" instance=ExtResource("7_mqjr6")]
+visible = false
+
 [node name="CanvasGroup" type="CanvasGroup" parent="UICanvas"]
 position = Vector2(28.4, 30.65)
 scale = Vector2(0.25, 0.25)
@@ -137,9 +140,6 @@ position = Vector2(1945, 55)
 [node name="LevelUI" parent="UICanvas/ui_pos" instance=ExtResource("2_la7km")]
 z_index = 3
 metadata/_edit_lock_ = true
-
-[node name="GameOver" parent="UICanvas" instance=ExtResource("7_mqjr6")]
-visible = false
 
 [node name="Background" type="CanvasGroup" parent="."]
 position = Vector2(568, 319)
