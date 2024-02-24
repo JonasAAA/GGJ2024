@@ -99,6 +99,8 @@ func _process(delta: float) -> void:
 		animation_player.play("walking_happy")
 		turn_happy.emit()
 	if is_happy:
+		# So that it transitions to the last animation frame for sure
+		emotion_indicator_player.seek(1.1, true)
 		emotion_indicator_player.pause()
 	else:
 		emotion_indicator_player.seek(happiness / required_happiness, true)
