@@ -1,95 +1,101 @@
 Event	ID	Name			Wwise Object Path	Notes
 	73601253	ClownBalloon			\Default Work Unit\Clown\ClownBalloon	
-	220193526	MusicFillSuccess			\Default Work Unit\Music\MusicFillSuccess	
+	143556007	PersonConvertedMale			\Default Work Unit\Person\PersonConvertedMale	
 	478204473	ClownBalloonAirOut			\Default Work Unit\Clown\ClownBalloonAirOut	
 	671820754	ClownTongueWhistle			\Default Work Unit\Clown\ClownTongueWhistle	
 	825489254	MusicGameplay			\Default Work Unit\Music\MusicGameplay	
 	1068133726	ClownIdle			\Default Work Unit\Clown\ClownIdle	
-	1174935145	MusicFillFail			\Default Work Unit\Music\MusicFillFail	
+	1255529612	AmbienceCircus			\Default Work Unit\Ambience\AmbienceCircus	
+	1542182174	MusicGameOver			\Default Work Unit\Music\MusicGameOver	
 	2061662214	PersonAreaEntered			\Default Work Unit\Person\PersonAreaEntered	
 	2166999993	ClownSuccess			\Default Work Unit\Clown\ClownSuccess	
+	2251940888	PersonConvertedFemale			\Default Work Unit\Person\PersonConvertedFemale	
 	2345123606	ClownBalloonAirIn			\Default Work Unit\Clown\ClownBalloonAirIn	
+	2668637386	MusicGameWin			\Default Work Unit\Music\MusicGameWin	
 	3000251912	ClownAreaEntered			\Default Work Unit\Clown\ClownAreaEntered	
 	3260659876	ClownFail			\Default Work Unit\Clown\ClownFail	
-	3550401272	PersonConverted			\Default Work Unit\Person\PersonConverted	
 	4082046343	MusicMenu			\Default Work Unit\Music\MusicMenu	
 	4165973916	PersonIdle			\Default Work Unit\Person\PersonIdle	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	19900555	Bell 7	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 7_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 7		43011
+	32401173	Bell 9	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 9_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 9		59415
 	34316921	ClownBalloonAirOut2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirOut2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirOut\ClownBalloonAirOut2		158873
 	38511902	ClownBalloon9	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon9_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon9		17372
-	43477517	PersonConverted4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConverted\PersonConverted4		9004
+	43477517	PersonConvertedFemale3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConvertedFemale\PersonConvertedFemale3		9004
 	51882411	ClownBalloonAirOut5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirOut5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirOut\ClownBalloonAirOut5		30833
-	59278056	MusicFill5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill5_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillSuccess\MusicFillSuccess1\MusicFill5		66517
-	63119302	PersonIdle2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonIdle2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonIdle\PersonIdle2		3105
+	59278056	MusicFill5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill5_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameWin\MusicGameWin1\MusicFill5		66517
 	70239462	ClownIdle2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle2		4477
+	72133741	Bell 4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 4		29814
 	80748479	ClownAreaEntered7	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered7_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered7		17950
 	93317724	PersonAreaEntered1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonAreaEntered1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonAreaEntered\PersonAreaEntered1		9617
-	94542142	PersonConverted2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConverted\PersonConverted2		26233
-	117869598	ClownIdle5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle5		4430
-	159141816	PersonConverted5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConverted\PersonConverted5		9396
+	94542142	PersonConvertedFemale1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConvertedFemale\PersonConvertedFemale1		26233
+	114285620	Bell 1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 1		6090
+	159141816	PersonConvertedFemale4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConvertedFemale\PersonConvertedFemale4		9396
 	164934698	ClownBalloonAirIn2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirIn2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirIn\ClownBalloonAirIn2		31973
 	166835310	ClownBalloon2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon2		21763
-	170244634	PersonConverted1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConverted\PersonConverted1		40808
+	170244634	PersonConvertedMale1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConvertedMale\PersonConvertedMale1		40808
 	178645853	ClownBalloon3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon3		19126
 	218696574	ClownBalloonAirIn3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirIn3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirIn\ClownBalloonAirIn3		16481
 	238328911	ClownAreaEntered1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered1		7428
-	244493744	MusicFill8	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill8_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillSuccess\MusicFillSuccess4\MusicFill8		73298
+	244493744	MusicFill8	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill8_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameWin\MusicGameWin3\MusicFill8		73298
 	258594235	ClownBalloonAirIn1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirIn1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirIn\ClownBalloonAirIn1		25465
-	298849325	ClownIdle7	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle7_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle7		11007
+	298849325	ClownIdle4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle7_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle4		11007
 	307229985	PersonAreaEntered4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonAreaEntered4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonAreaEntered\PersonAreaEntered4		23210
 	318383623	ClownBalloon11	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon11_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon11		45279
+	329862805	Bell 5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 5		36210
 	358093219	ClownAreaEntered6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered6		15628
 	373313274	ClownAreaEntered4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered4		16568
 	392757770	ClownBalloon4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon4		20628
-	406411718	PersonConverted6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConverted\PersonConverted6		21112
-	413672532	ClownIdle6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle6		6629
+	406411718	PersonConvertedMale2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConvertedMale\PersonConvertedMale2		21112
+	413672532	ClownIdle3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle3		6629
 	429455388	MusicGameplay2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicGameplay2_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameplay\MusicGameplay2\MusicGameplay2		2191314
 	439097630	ClownTongueWhistle2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle2		25701
 	453450010	PersonAreaEntered2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonAreaEntered2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonAreaEntered\PersonAreaEntered2		8566
-	464202147	MusicFill1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill1_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillFail\MusicFillFail1\MusicFill1		74034
+	464202147	MusicFill1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill1_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameOver\MusicGameOver1\MusicFill1		74034
 	465265953	ClownTongueWhistle4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle4		31049
 	509804686	ClownAreaEntered10	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered10_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered10		14022
 	514661622	ClownTongueWhistle3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle3		16002
 	517510924	ClownTongueWhistle6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle6		34836
-	519532111	PersonConverted3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConverted\PersonConverted3		7476
+	519532111	PersonConvertedFemale2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonConverted3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonConvertedFemale\PersonConvertedFemale2		7476
 	519929995	ClownBalloonAirOut3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirOut3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirOut\ClownBalloonAirOut3		107305
+	537372980	Bell 10	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 10_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 10		131298
 	553313871	ClownIdle1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle1		24113
 	555415547	ClownBalloon8	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon8_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon8		28522
-	568652679	ClownFail	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownFail_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownFail		9007
+	568652679	ClownFail1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownFail_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownFail\ClownFail1		9007
 	571731207	ClownAreaEntered5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered5		13110
-	609922028	ClownIdle3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle3		4489
 	620207500	ClownBalloon10	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon10_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon10		25454
+	621484608	Bell 8	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 8_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 8		46913
 	690472483	ClownTongueWhistle1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle1		23212
 	697536373	PersonAreaEntered3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonAreaEntered3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonAreaEntered\PersonAreaEntered3		8122
-	706297674	MusicFill6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill6_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillSuccess\MusicFillSuccess2\MusicFill6		77561
-	714064137	ClownIdle8	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle8_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle8		8787
+	706297674	MusicFill6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill6_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameWin\MusicGameWin2\MusicFill6		77561
+	741602775	Bell 6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 6		37004
 	743252090	ClownBalloon6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon6		9411
 	759737665	ClownBalloonAirIn4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirIn4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirIn\ClownBalloonAirIn4		26524
 	763487299	ClownAreaEntered9	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered9_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered9		14382
-	767849442	ClownIdle9	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle9_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle9		7287
-	790442989	PersonIdle3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonIdle3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonIdle\PersonIdle3		3536
-	824531458	MusicFill7	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill7_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillSuccess\MusicFillSuccess3\MusicFill7		70988
+	767849442	ClownIdle5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle9_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle5		7287
 	837196206	ClownSuccess1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownSuccess1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownSuccess\ClownSuccess1		28989
 	837972734	MusicGameplay1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicGameplay1_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameplay\MusicGameplay1\MusicGameplay1		3276744
 	840022186	ClownBalloon7	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon7_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon7		23187
 	844411174	ClownSuccess2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownSuccess2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownSuccess\ClownSuccess2		29408
 	856848511	ClownBalloon5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon5		11286
+	865303911	Bell 3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 3		25862
 	875086027	ClownTongueWhistle7	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle7_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle7		37539
 	894189346	ClownAreaEntered2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered2		4135
-	903395655	PersonIdle1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\PersonIdle1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Person\Person\PersonIdle\PersonIdle1		4123
-	907741672	MusicFill3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill3_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillFail\MusicFillFail3\MusicFill3		61394
+	896309193	Bell 2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 2_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 2		7522
+	907741672	MusicFill3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill3_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameOver\MusicGameOver3\MusicFill3		61394
 	931009196	ClownBalloon1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloon1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloon\ClownBalloon1		32354
-	934154088	MusicFill2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill2_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillFail\MusicFillFail2\MusicFill2		61414
+	934154088	MusicFill2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill2_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameOver\MusicGameOver2\MusicFill2		61414
 	943210361	MusicGameplay3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicGameplay3_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameplay\MusicGameplay3\MusicGameplay3		1436599
 	952670124	ClownAreaEntered8	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered8_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered8		16908
 	953818679	ClownBalloonAirOut1	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirOut1_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirOut\ClownBalloonAirOut1		140569
 	965818215	ClownBalloonAirOut6	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirOut6_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirOut\ClownBalloonAirOut6		87147
-	983675350	ClownIdle4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownIdle4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownIdle\ClownIdle4		4926
-	986105576	MusicFill9	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill9_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillFail\MusicFillFail5\MusicFill9		84186
+	986105576	MusicFill9	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill9_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameOver\MusicGameOver5\MusicFill9		84186
+	995620104	Bell 11	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\Bell 11_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\Bells\Bell 11		178249
 	1016902541	ClownTongueWhistle5	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownTongueWhistle5_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownTongueWhistle\ClownTongueWhistle5		49193
-	1025004328	ClownAreaEntered3	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownAreaEntered\ClownAreaEntered3		5148
+	1025004328	ClownFail2	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownAreaEntered3_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownFail\ClownFail2		5148
 	1027938166	ClownBalloonAirOut4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\ClownBalloonAirOut4_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Clown\Clown\ClownBalloonAirOut\ClownBalloonAirOut4		16618
-	1033980712	MusicFill4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill4_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicFillFail\MusicFillFail4\MusicFill4		76630
+	1033980712	MusicFill4	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicFill4_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicGameOver\MusicGameOver4\MusicFill4		76630
 	1034271680	MusicMenu	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\MusicMenu_3CD5CF17.wem		\Interactive Music Hierarchy\Default Work Unit\MusicMenu\MusicMenu1\MusicMenu		925459
+	1060624119	AmbienceCircus	C:\Users\Paulius\Documents\WwiseProjects\GGJ2024\.cache\Windows\SFX\AmbienceCircus_8709A909.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Circus\AmbienceCircus\AmbienceCircus		838605
 

@@ -9,10 +9,18 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="732818365" Type="User" Language="SFX" Hash="{889E8F23-EF6F-4CB2-E103-DB98A15660A5}">
+		<SoundBank Id="732818365" Type="User" Language="SFX" Hash="{A71C880B-5B11-9C61-8B83-959477FAAE46}">
 			<ShortName>ClownSound</ShortName>
 			<Path>ClownSound.bnk</Path>
 			<Media>
+				<File Id="19900555" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 7.wav</ShortName>
+					<CachePath>SFX/Bell 7_8709A909.wem</CachePath>
+				</File>
+				<File Id="32401173" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 9.wav</ShortName>
+					<CachePath>SFX/Bell 9_8709A909.wem</CachePath>
+				</File>
 				<File Id="34316921" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownBalloonAirOut2.wav</ShortName>
 					<CachePath>SFX/ClownBalloonAirOut2_8709A909.wem</CachePath>
@@ -33,13 +41,13 @@
 					<ShortName>MusicFill5.wav</ShortName>
 					<CachePath>SFX/MusicFill5_3CD5CF17.wem</CachePath>
 				</File>
-				<File Id="63119302" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PersonIdle2.wav</ShortName>
-					<CachePath>SFX/PersonIdle2_8709A909.wem</CachePath>
-				</File>
 				<File Id="70239462" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownIdle2.wav</ShortName>
 					<CachePath>SFX/ClownIdle2_8709A909.wem</CachePath>
+				</File>
+				<File Id="72133741" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 4.wav</ShortName>
+					<CachePath>SFX/Bell 4_8709A909.wem</CachePath>
 				</File>
 				<File Id="80748479" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownAreaEntered7.wav</ShortName>
@@ -53,9 +61,9 @@
 					<ShortName>PersonConverted2.wav</ShortName>
 					<CachePath>SFX/PersonConverted2_8709A909.wem</CachePath>
 				</File>
-				<File Id="117869598" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ClownIdle5.wav</ShortName>
-					<CachePath>SFX/ClownIdle5_8709A909.wem</CachePath>
+				<File Id="114285620" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 1.wav</ShortName>
+					<CachePath>SFX/Bell 1_8709A909.wem</CachePath>
 				</File>
 				<File Id="159141816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PersonConverted5.wav</ShortName>
@@ -104,6 +112,10 @@
 				<File Id="318383623" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownBalloon11.wav</ShortName>
 					<CachePath>SFX/ClownBalloon11_8709A909.wem</CachePath>
+				</File>
+				<File Id="329862805" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 5.wav</ShortName>
+					<CachePath>SFX/Bell 5_8709A909.wem</CachePath>
 				</File>
 				<File Id="358093219" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownAreaEntered6.wav</ShortName>
@@ -165,6 +177,10 @@
 					<ShortName>ClownBalloonAirOut3.wav</ShortName>
 					<CachePath>SFX/ClownBalloonAirOut3_8709A909.wem</CachePath>
 				</File>
+				<File Id="537372980" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 10.wav</ShortName>
+					<CachePath>SFX/Bell 10_8709A909.wem</CachePath>
+				</File>
 				<File Id="553313871" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownIdle1.wav</ShortName>
 					<CachePath>SFX/ClownIdle1_8709A909.wem</CachePath>
@@ -181,13 +197,13 @@
 					<ShortName>ClownAreaEntered5.wav</ShortName>
 					<CachePath>SFX/ClownAreaEntered5_8709A909.wem</CachePath>
 				</File>
-				<File Id="609922028" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ClownIdle3.wav</ShortName>
-					<CachePath>SFX/ClownIdle3_8709A909.wem</CachePath>
-				</File>
 				<File Id="620207500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownBalloon10.wav</ShortName>
 					<CachePath>SFX/ClownBalloon10_8709A909.wem</CachePath>
+				</File>
+				<File Id="621484608" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 8.wav</ShortName>
+					<CachePath>SFX/Bell 8_8709A909.wem</CachePath>
 				</File>
 				<File Id="690472483" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownTongueWhistle1.wav</ShortName>
@@ -201,9 +217,9 @@
 					<ShortName>MusicFill6.wav</ShortName>
 					<CachePath>SFX/MusicFill6_3CD5CF17.wem</CachePath>
 				</File>
-				<File Id="714064137" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ClownIdle8.wav</ShortName>
-					<CachePath>SFX/ClownIdle8_8709A909.wem</CachePath>
+				<File Id="741602775" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 6.wav</ShortName>
+					<CachePath>SFX/Bell 6_8709A909.wem</CachePath>
 				</File>
 				<File Id="743252090" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownBalloon6.wav</ShortName>
@@ -220,14 +236,6 @@
 				<File Id="767849442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownIdle9.wav</ShortName>
 					<CachePath>SFX/ClownIdle9_8709A909.wem</CachePath>
-				</File>
-				<File Id="790442989" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PersonIdle3.wav</ShortName>
-					<CachePath>SFX/PersonIdle3_8709A909.wem</CachePath>
-				</File>
-				<File Id="824531458" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>MusicFill7.wav</ShortName>
-					<CachePath>SFX/MusicFill7_3CD5CF17.wem</CachePath>
 				</File>
 				<File Id="837196206" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownSuccess1.wav</ShortName>
@@ -249,6 +257,10 @@
 					<ShortName>ClownBalloon5.wav</ShortName>
 					<CachePath>SFX/ClownBalloon5_8709A909.wem</CachePath>
 				</File>
+				<File Id="865303911" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 3.wav</ShortName>
+					<CachePath>SFX/Bell 3_8709A909.wem</CachePath>
+				</File>
 				<File Id="875086027" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownTongueWhistle7.wav</ShortName>
 					<CachePath>SFX/ClownTongueWhistle7_8709A909.wem</CachePath>
@@ -257,9 +269,9 @@
 					<ShortName>ClownAreaEntered2.wav</ShortName>
 					<CachePath>SFX/ClownAreaEntered2_8709A909.wem</CachePath>
 				</File>
-				<File Id="903395655" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>PersonIdle1.wav</ShortName>
-					<CachePath>SFX/PersonIdle1_8709A909.wem</CachePath>
+				<File Id="896309193" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 2.wav</ShortName>
+					<CachePath>SFX/Bell 2_8709A909.wem</CachePath>
 				</File>
 				<File Id="907741672" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MusicFill3.wav</ShortName>
@@ -289,13 +301,13 @@
 					<ShortName>ClownBalloonAirOut6.wav</ShortName>
 					<CachePath>SFX/ClownBalloonAirOut6_8709A909.wem</CachePath>
 				</File>
-				<File Id="983675350" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>ClownIdle4.wav</ShortName>
-					<CachePath>SFX/ClownIdle4_8709A909.wem</CachePath>
-				</File>
 				<File Id="986105576" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MusicFill9.wav</ShortName>
 					<CachePath>SFX/MusicFill9_3CD5CF17.wem</CachePath>
+				</File>
+				<File Id="995620104" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Bell 11.wav</ShortName>
+					<CachePath>SFX/Bell 11_8709A909.wem</CachePath>
 				</File>
 				<File Id="1016902541" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ClownTongueWhistle5.wav</ShortName>
@@ -317,8 +329,28 @@
 					<ShortName>MusicMenu.wav</ShortName>
 					<CachePath>SFX/MusicMenu_3CD5CF17.wem</CachePath>
 				</File>
+				<File Id="1060624119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AmbienceCircus.wav</ShortName>
+					<CachePath>SFX/AmbienceCircus_8709A909.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1255529612" Name="AmbienceCircus">
+					<MediaRefs>
+						<MediaRef Id="19900555"/>
+						<MediaRef Id="32401173"/>
+						<MediaRef Id="72133741"/>
+						<MediaRef Id="114285620"/>
+						<MediaRef Id="329862805"/>
+						<MediaRef Id="537372980"/>
+						<MediaRef Id="621484608"/>
+						<MediaRef Id="741602775"/>
+						<MediaRef Id="865303911"/>
+						<MediaRef Id="896309193"/>
+						<MediaRef Id="995620104"/>
+						<MediaRef Id="1060624119"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3000251912" Name="ClownAreaEntered">
 					<MediaRefs>
 						<MediaRef Id="80748479"/>
@@ -330,7 +362,6 @@
 						<MediaRef Id="763487299"/>
 						<MediaRef Id="894189346"/>
 						<MediaRef Id="952670124"/>
-						<MediaRef Id="1025004328"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="73601253" Name="ClownBalloon">
@@ -369,19 +400,16 @@
 				<Event Id="3260659876" Name="ClownFail">
 					<MediaRefs>
 						<MediaRef Id="568652679"/>
+						<MediaRef Id="1025004328"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1068133726" Name="ClownIdle">
 					<MediaRefs>
 						<MediaRef Id="70239462"/>
-						<MediaRef Id="117869598"/>
 						<MediaRef Id="298849325"/>
 						<MediaRef Id="413672532"/>
 						<MediaRef Id="553313871"/>
-						<MediaRef Id="609922028"/>
-						<MediaRef Id="714064137"/>
 						<MediaRef Id="767849442"/>
-						<MediaRef Id="983675350"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2166999993" Name="ClownSuccess">
@@ -401,7 +429,7 @@
 						<MediaRef Id="1016902541"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1174935145" Name="MusicFillFail">
+				<Event Id="1542182174" Name="MusicGameOver">
 					<MediaRefs>
 						<MediaRef Id="464202147"/>
 						<MediaRef Id="907741672"/>
@@ -410,19 +438,18 @@
 						<MediaRef Id="1033980712"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="220193526" Name="MusicFillSuccess">
-					<MediaRefs>
-						<MediaRef Id="59278056"/>
-						<MediaRef Id="244493744"/>
-						<MediaRef Id="706297674"/>
-						<MediaRef Id="824531458"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="825489254" Name="MusicGameplay">
 					<MediaRefs>
 						<MediaRef Id="429455388"/>
 						<MediaRef Id="837972734"/>
 						<MediaRef Id="943210361"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2668637386" Name="MusicGameWin">
+					<MediaRefs>
+						<MediaRef Id="59278056"/>
+						<MediaRef Id="244493744"/>
+						<MediaRef Id="706297674"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4082046343" Name="MusicMenu">
@@ -438,23 +465,21 @@
 						<MediaRef Id="697536373"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3550401272" Name="PersonConverted">
+				<Event Id="2251940888" Name="PersonConvertedFemale">
 					<MediaRefs>
 						<MediaRef Id="43477517"/>
 						<MediaRef Id="94542142"/>
 						<MediaRef Id="159141816"/>
-						<MediaRef Id="170244634"/>
-						<MediaRef Id="406411718"/>
 						<MediaRef Id="519532111"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4165973916" Name="PersonIdle">
+				<Event Id="143556007" Name="PersonConvertedMale">
 					<MediaRefs>
-						<MediaRef Id="63119302"/>
-						<MediaRef Id="790442989"/>
-						<MediaRef Id="903395655"/>
+						<MediaRef Id="170244634"/>
+						<MediaRef Id="406411718"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4165973916" Name="PersonIdle"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{53CACFF7-B759-1B3C-BB71-B2156266E7D3}">
@@ -610,5 +635,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{1EB55182-AB38-812A-5F42-D72F14134B49}</FileHash>
+	<FileHash>{FF3C866B-2579-4B73-E389-B25654B3F5B3}</FileHash>
 </SoundBanksInfo>
