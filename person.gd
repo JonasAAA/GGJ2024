@@ -1,12 +1,27 @@
 class_name Person extends Area2D
 
+enum Gender {
+	MALE,
+	FEMALE
+}
+
+class SpriteInfo:
+	var gender: Gender
+	var sprite: Sprite2D
+	
+	func _init(_gender: Gender, _sprite: Sprite2D) -> void:
+		gender = _gender
+		sprite = _sprite
+
 class PersonConfig:
+	var gender: Gender
 	var texture: Texture2D
 	var speed: float
 	
-	func _init(sprite: Sprite2D, _speed: float) -> void:
-		assert(sprite != null)
-		texture = sprite.texture
+	func _init(sprite_info: SpriteInfo, _speed: float) -> void:
+		gender = sprite_info.gender
+		assert(sprite_info.sprite != null)
+		texture = sprite_info.sprite.texture
 		speed = _speed
 
 const happiness_per_sec: float = 0.5
@@ -34,9 +49,9 @@ var global_state: GlobalStateType = GlobalState
 	#PersonConfig.new($Sprite2 as Sprite2D, 50),
 	#PersonConfig.new($Sprite3 as Sprite2D, 100),
 #]
-@onready var slow_sprites: Array[Sprite2D] = [$Sprite2]
-@onready var medium_sprites: Array[Sprite2D] = [$Sprite0, $Sprite3]
-@onready var fast_sprites: Array[Sprite2D] = [$Sprite1]
+@onready var slow_sprites: Array[SpriteInfo] = [SpriteInfo.new(Gender.MALE, $Sprite2)]
+@onready var medium_sprites: Array[SpriteInfo] = [SpriteInfo.new(Gender.MALE, $Sprite0), SpriteInfo.new(Gender.FEMALE, $Sprite3)]
+@onready var fast_sprites: Array[SpriteInfo] = [SpriteInfo.new(Gender.FEMALE, $Sprite1)]
 @onready var sprite: Sprite2D = $transform/sprite_visitor
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var emotion_indicator_player: AnimationPlayer = $AnimationPlayerEmotionIndicator
@@ -50,7 +65,7 @@ var was_happy: bool
 signal turn_happy
 
 func get_config(person_speed: PersonSpeed) -> PersonConfig:
-	var sprite_array: Array[Sprite2D] = []
+	var sprite_array: Array[SpriteInfo] = []
 	var local_speed: float = 0
 	match person_speed:
 		PersonSpeed.SLOW:

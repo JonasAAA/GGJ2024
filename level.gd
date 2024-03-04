@@ -65,7 +65,7 @@ func _process(delta: float) -> void:
 				if level_ui.missed >= miss_people_to_lose:
 					game_over_ui.show()
 					get_tree().paused = true
-				Wwise.post_event_id(AK.EVENTS.MUSICFILLFAIL, self)
+					Wwise.post_event_id(AK.EVENTS.MUSICGAMEOVER, self)
 				Wwise.post_event_id(AK.EVENTS.CLOWNFAIL, self)
 		else:
 			not_done_people.append(person)
@@ -118,7 +118,6 @@ func person_turned_happy() -> void:
 	level_ui.score += 1
 	Wwise.post_event_id(AK.EVENTS.CLOWNSUCCESS, self)
 	Wwise.post_event_id(AK.EVENTS.PERSONCONVERTED, self)
-	Wwise.post_event_id(AK.EVENTS.MUSICFILLSUCCESS, self)
 
 func _on_quit_pressed() -> void:
 	get_tree().paused = false
